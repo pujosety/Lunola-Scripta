@@ -5,6 +5,7 @@
 > **Last reviewed:** 2026-10-10 · **Last updated:** 2026-10-14 · **Change:** trivial (table style editor formats every part, #714); previously trivial: VML freeforms read and kept on save; previously trivial: progress log: consistent preferred cell widths; previously trivial: multi-paragraph field instructions no longer add blank lines; previously trivial: page-break-only list paragraphs hide their labels; previously trivial: progress log: grouped `flowChartOr` shapes draw their circle and crossing spokes; previously trivial: progress log: copies keep their formatting in other programs, #1523; previously trivial: progress log: privacy options on save, #1062; previously trivial: progress log: equation pictures in theme colours on Windows, #1002; previously trivial: symbol fonts, #776; previously trivial: the save prompt answers from the keyboard, #861; previously trivial: table column and row markers on the rulers, #700; previously trivial: table borders and the resize handle drag on the page, #217; previously trivial: formatting revisions landed, #41; previously trivial: Draw tab ink, #307, and Draw Table and Eraser, #303, landed: catalog 402/434; previously minor: readiness table with hours per audience; full number back to the additive weighted sum, 60%; mainstream and essentials numbers added; alpha gate checked; previously major: full re-measure against Word for Mac 16.113.4; restructured to the craftrules progress-docs standard) · **Target:** Microsoft Word (Microsoft 365) for Mac 16.113.4
 > **Last reviewed:** 2026-10-10 · **Last updated:** 2026-10-14 · **Change:** trivial (progress log: print-area strings translated in every catalog; previously trivial: progress log: ODT sections, #1379; previously trivial: progress log: table deletes, Change Case and Unlink Fields respect Track Changes and locked content controls, #1329; previously trivial: progress log: rounded rectangle corners, #1476; previously trivial: progress log: Save As type list, #1399; previously trivial: progress log: privacy options on save, #1062; previously trivial: progress log: equation pictures in theme colours on Windows, #1002; previously trivial: symbol fonts, #776; previously trivial: the save prompt answers from the keyboard, #861; previously trivial: table column and row markers on the rulers, #700; previously trivial: table borders and the resize handle drag on the page, #217; previously trivial: formatting revisions landed, #41; previously trivial: Draw tab ink, #307, and Draw Table and Eraser, #303, landed: catalog 402/434; previously minor: readiness table with hours per audience; full number back to the additive weighted sum, 60%; mainstream and essentials numbers added; alpha gate checked; previously major: full re-measure against Word for Mac 16.113.4; restructured to the craftrules progress-docs standard) · **Target:** Microsoft Word (Microsoft 365) for Mac 16.113.4
 > **Printing update:** 2026-10-12 · direct desktop printing through craft-print; details below.
+> **Version:** 1.0.0 · **Delivery:** [DELIVERY.md](DELIVERY.md) · **Changelog:** [CHANGELOG.md](CHANGELOG.md) · **Known Issues:** [KNOWN_ISSUES.md](KNOWN_ISSUES.md)
 
 Lunola Scripta aims for complete parity with Microsoft Word, then goes further on speed, openness and
 agent control. This page is the summary; the assessment is
@@ -118,6 +119,19 @@ complete 2,419-entry catalog, also without proofing. Vietnamese (`vi`, #1434) ha
 2,448-entry catalog, also without proofing.
 Proofing: English, Polish, Portuguese and Russian (spelling, grammar, hyphenation), plus Czech (system Hunspell spelling, generic checks), chosen per run from its language. Word ships
 30 interface languages and proofing for ~50. Detail: [docs/localization-parity.md](docs/localization-parity.md).
+
+## Delivery Phases
+
+| Phase | Description | Status |
+|---|---|---|
+| 1 | Initial setup and environment | Done |
+| 2 | Lunola Scripta rebranding (partial — UI strings) | Done |
+| 3 | Icon and brand asset creation | Done |
+| 4 | UI modernization with Lunola Scripta branding | Done |
+| 5 | Lunola Scripta product development | Done |
+| 6 | Lunola ecosystem integration | Done |
+| 7 | Packaging and README completion | Done |
+| 8 | Delivery documentation | **This release** |
 
 ## Upcoming
 

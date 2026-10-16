@@ -57,6 +57,9 @@
   <a href="#for-agents-cli-and-mcp">For agents</a> ·
   <a href="#architecture">Architecture</a> ·
   <a href="#roadmap">Roadmap</a> ·
+  <a href="CHANGELOG.md">Changelog</a> ·
+  <a href="KNOWN_ISSUES.md">Known Issues</a> ·
+  <a href="DELIVERY.md">Delivery</a> ·
   <a href="#downloads">Downloads</a> ·
   <a href="#the-crafting-apps">The Crafting Apps</a> ·
   <a href="#license-and-credits">License and credits</a>
