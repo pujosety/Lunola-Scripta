@@ -344,21 +344,16 @@ pub fn title_bar(app: &mut WordApp, ui: &mut Ui) {
                     right_start = ui.min_rect().min.x;
                 });
             });
-            // Centred title.
+            // Centred title: the Lunola brand with the document name, as Word shows
+            // "Document1 - Word" and other Lunola apps show their app name the same way.
             let title = if !app.has_document() {
                 // No document open (#1129): the app's name alone.
-                "Lunola Scripta".to_string()
+                crate::theme::LUNOLA_BRAND.to_string()
             } else {
                 format!(
                     "{} — {}",
                     app.title_stem(),
-                    if app.session.dirty {
-                        tl!("Edited")
-                    } else if app.session.path.is_some() {
-                        tl!("Saved")
-                    } else {
-                        tl!("Not saved")
-                    }
+                    crate::theme::LUNOLA_BRAND
                 )
             };
             let font = TypeRung::Chrome.semibold();

@@ -2034,9 +2034,9 @@ impl WordApp {
             ctx.open_url(egui::OpenUrl::new_tab(url));
         }
         let title = if self.has_document() {
-            format!("{}{} - Lunola Scripta", self.title_stem(), if self.session.dirty { " •" } else { "" })
+            format!("{}{} - {}", self.title_stem(), if self.session.dirty { " •" } else { "" }, crate::theme::LUNOLA_BRAND)
         } else {
-            "Lunola Scripta".to_string()
+            crate::theme::LUNOLA_BRAND.to_string()
         };
         if title != self.sent_title {
             ctx.send_viewport_cmd(egui::ViewportCommand::Title(title.clone()));

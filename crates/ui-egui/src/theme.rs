@@ -4,9 +4,85 @@ use std::sync::Arc;
 
 use egui::{Align2, Color32, CornerRadius, FontData, FontDefinitions, FontFamily, FontId, Rect, Stroke, Visuals};
 
+/// The Lunola brand name, for the window title, About box and elsewhere.
+pub const LUNOLA_BRAND: &str = "Lunola Scripta";
+
 /// Lunola Scripta's app colour (and its darker ink for text on light backgrounds).
 pub const APP_COLOR: Color32 = Color32::from_rgb(0x32, 0x8B, 0xE6);
 pub const APP_INK: Color32 = Color32::from_rgb(0x1E, 0x5A, 0xA0);
+
+/// Shared Lunola spacing scale, in points. These are the canonical gaps, paddings and
+/// margins every Lunola app draws with: `xs` for tight icon-to-label gaps, `sm` between
+/// related controls, `md` between groups, `lg` between sections and `xl` between major
+/// regions of a pane or dialog. Apps draw at these sizes (scaled by their interface-size
+/// setting) so a button in Scripta sits the same distance from its neighbour as one in
+/// PhotoCraft or PdfCraft.
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct Spacing {
+    /// Tight: icon-to-label, tag gaps. 4 pt.
+    pub xs: f32,
+    /// Small: controls within a group. 6 pt.
+    pub sm: f32,
+    /// Medium: between groups in a dialog. 10 pt.
+    pub md: f32,
+    /// Large: between sections. 16 pt.
+    pub lg: f32,
+    /// Extra large: between major regions. 24 pt.
+    pub xl: f32,
+}
+
+impl Spacing {
+    /// The shared Lunola spacing scale.
+    pub const SCALE: Spacing = Spacing { xs: 4.0, sm: 6.0, md: 10.0, lg: 16.0, xl: 24.0 };
+
+    /// The spacing scale for a given interface-size zoom factor, so gaps scale with the
+    /// interface size setting (like egui's own spacing).
+    pub fn scaled(self, zoom: f32) -> Spacing {
+        Spacing {
+            xs: self.xs * zoom,
+            sm: self.sm * zoom,
+            md: self.md * zoom,
+            lg: self.lg * zoom,
+            xl: self.xl * zoom,
+        }
+    }
+}
+
+impl Default for Spacing {
+    fn default() -> Self {
+        Self::SCALE
+    }
+}
+
+/// Shared Lunola border radius scale, in points. Controls, cards, panels and menus share
+/// these so a button or dialog corner looks the same across every Lunola app.
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct Radius {
+    /// Controls (buttons, inputs, chips). 4 pt.
+    pub control: f32,
+    /// Cards and small panels. 6 pt.
+    pub card: f32,
+    /// Dialogs and overlays. 8 pt.
+    pub dialog: f32,
+    /// Pills and circular buttons. 999 pt (a full circle).
+    pub pill: f32,
+}
+
+impl Radius {
+    /// The shared Lunola border radius scale.
+    pub const SCALE: Radius = Radius { control: 4.0, card: 6.0, dialog: 8.0, pill: 999.0 };
+
+    /// The radius scale for a given interface-size zoom factor.
+    pub fn scaled(self, zoom: f32) -> Radius {
+        Radius { control: self.control * zoom, card: self.card * zoom, dialog: self.dialog * zoom, pill: 999.0 }
+    }
+}
+
+impl Default for Radius {
+    fn default() -> Self {
+        Self::SCALE
+    }
+}
 
 /// The interface theme setting (File › Options › General, View › Interface Theme): a fixed light or
 /// dark palette, or `System`, which follows the OS light/dark appearance live (#115). Dark page
