@@ -1,0 +1,901 @@
+# Indonesian (id) interface catalog. Columns, separated by a TAB:
+#   context <TAB> English source <TAB> translation
+#   context    usually empty. `preview` words sample text inside rendered previews (the Design
+#              tab's style-set tiles), which must fit a small tile; it falls back to the plain entry.
+#   source     the English text exactly as in the code (tl!(...), ribbon labels, command labels)
+#   escapes    \n  \t  \\  inside a column. `{name}` placeholders must appear in both columns, and a
+#              trailing "…" in one needs one in the other.
+#   Lines starting with # and blank lines are ignored. A missing entry shows in English.
+#
+# Clean room: every entry was written from the plain meaning of the English label in ordinary
+# Indonesian computing vocabulary. No Microsoft Word (or other product) localisation, string table
+# or translated UI was consulted or copied, and no other catalog in this repository was used;
+# add entries the same way.
+# Product, format and technology names (Lunola Scripta, PDF, DOCX, MCP …) stay in Latin letters.
+# Commands and buttons use short imperatives (Simpan, Sisipkan, Tempel); labels use natural Indonesian.
+
+\t(no style)\t(tidak ada gaya)
+\t(no suggestions)\t(tidak ada saran)
+\t(none)\t(tidak ada)
+\t(normal text)\t(teks normal)
+\t(not matched)\t(tidak cocok)
+\t(picture or object)\t(gambar atau objek)
+\t1.5 Line Spacing\tSpasi 1,5
+\tA free, open-source word processor written from scratch in Rust.\nPart of the Crafting Apps from the ArtCraft team.\tPengolah kata gratis, sumber terbuka yang ditulis dari awal dengan Rust.\nBagian dari Crafting Apps dari tim ArtCraft.
+\tAbout\tTentang
+\tAbout WordCraft\tTentang WordCraft
+\tAccept\tTerima
+\tAccept All Changes\tTerima Semua Perubahan
+\tAccept This Change\tTerima Perubahan Ini
+\tAccessibility\tAksesibilitas
+\tAdd\tTambah
+\tAdd >>\tTambah >>
+\tAdd Condition\tTambahkan Kondisi
+\tAdd Field\tTambahkan Bidang
+\tAdd Font…\tTambahkan Font…
+\tAdd Object to Selection\tTambahkan Objek ke Pilihan
+\tAdd Row\tTambahkan Baris
+\tAdd Series\tTambahkan Seri
+\tAdd Space Before Paragraph\tTambahkan Spasi Sebelum Paragraf
+\tAdd space between Asian and Latin text\tTambahkan spasi antara teks Asia dan Latin
+\tAdd space between Asian text and numbers\tTambahkan spasi antara teks Asia dan angka
+\tAdd tab stop at:\tTambahkan hentian tab di:
+\tAdd Text\tTambahkan Teks
+\tAdd the chapter number\tTambahkan nomor bab
+\tAdd to Dictionary\tTambahkan ke Kamus
+\tAdd to Document\tTambahkan ke Dokumen
+\tAdd to Quick Access Toolbar\tTambahkan ke Bilah Akses Cepat
+\tAdd to Style Gallery\tTambahkan ke Galeri Gaya
+\tAdd a comment\tTambahkan komentar
+\tAdd a table\tTambahkan tabel
+\tAddress Block\tBlok Alamat
+\tAddress labels\tLabel alamat
+\tAddress:\tAlamat:
+\tAddress\nBlock\tBlok\nAlamat
+\tAdjust\tSesuaikan
+\tAdvanced\tLanjutan
+\tAdvanced Find\tPencarian Lanjutan
+\tAdvanced Find…\tPencarian Lanjutan…
+\tAfter:\tSetelah:
+\tAgents\tAgen
+\tAlign\tSejajarkan
+\tAlign Left\tRata Kiri
+\tAlign Right\tRata Kanan
+\tAligned at:\tSejajarkan di:
+\tAlignment\tPenjajaran
+\tAlignment:\tPenjajaran:
+\tAll\tSemua
+\tAll Borders\tSemua Batas
+\tAll Caps\tSemua Huruf Besar
+\tAll Commands\tSemua Perintah
+\tAll Levels\tSemua Tingkat
+\tAll Markup\tSemua Penanda
+\tAll caps\tSemua huruf besar
+\tAll symbol sets\tSemua set simbol
+\tAllow hanging punctuation\tIzinkan tanda baca menggantung
+\tAllow Latin text to wrap in the middle of a word\tIzinkan teks Latin membungkus di tengah kata
+\tAllow line breaks\tIzinkan pemutusan baris
+\tAllow row to break across pages\tIzinkan baris terputus antar halaman
+\tAlphabetical\tAlfabetis
+\tAlt text\tTeks Alt
+\tAlt:\tAlt:
+\tAnd\tDan
+\tAnimate the caret (it glides and fades)\tAnimasikan kursor (meluncur dan memudar)
+\tAnimation effects:\tEfek animasi:
+\tAnother file\tFile lain
+\tAnyone can open this document. Encrypt it with a password to keep it private.\tSiapa pun dapat membuka dokumen ini. Enkripsi dengan kata sandi untuk menjaganya tetap pribadi.
+\tAnyone who opens the document will need this password.\tSiapa pun yang membuka dokumen ini akan memerlukan kata sandi ini.
+\tApply\tTerapkan
+\tApply Asian line-breaking rules (kinsoku)\tTerapkan aturan pemutusan baris Asia (kinsoku)
+\tApply Character Style\tTerapkan Gaya Karakter
+\tApply Style\tTerapkan Gaya
+\tApply formatting to:\tTerapkan pemformatan ke:
+\tApply to:\tTerapkan ke:
+\tAs Recommended\tSeperti yang Direkomendasikan
+\tAscending\tNaik
+\tAsian text font:\tFont teks Asia:
+\tAssign\tTugaskan
+\tAt least\tSetidaknya
+\tAt least {n}\tSetidaknya {n}
+\tAtmosphere\tAtmosfer
+\tAttach…\tLampirkan…
+\tAuthor\tPenulis
+\tAuto\tOtomatis
+\tAuto ({percent}%)\tOtomatis ({percent}%)
+\tAutoFit\tMuat Otomatis
+\tAutoFit Contents\tMuat Otomatis Konten
+\tAutoFit Window\tMuat Otomatis Jendela
+\tAutomatic\tOtomatis
+\tAutomatic ({language})\tOtomatis ({language})
+\tAutomatic ({region})\tOtomatis ({region})
+\tAutomatic bulleted lists\tDaftar bullet otomatis
+\tAutomatic follows your system's language. Menus and commands change; your documents don't.\tOtomatis mengikuti bahasa sistem Anda. Menu dan perintah berubah; dokumen Anda tidak.
+\tAutomatic numbered lists\tDaftar bernomor otomatis
+\tAutomatically hyphenate document\tOtomatis tanda hubung dokumen
+\tAutomatically update document styles\tOtomatis perbarui gaya dokumen
+\tAutoSave\tSimpan Otomatis
+\tAutoSave documents you have saved in Lunola Scripta\tSimpan Otomatis dokumen yang telah Anda simpan di Lunola Scripta
+\tAutoSave failed: {error}. Save the document to turn AutoSave back on.\tSimpan Otomatis gagal: {error}. Simpan dokumen untuk mengaktifkan kembali Simpan Otomatis.
+\tAutoSave isn't available in the browser: it can't write to your files. Save downloads a copy.\tSimpan Otomatis tidak tersedia di browser: tidak dapat menulis ke file Anda. Simpan mengunduh salinan.
+\tAutoSave only keeps .docx, .odt and .rtf files; {name} can't keep all formatting. Save as .docx to turn on AutoSave.\tSimpan Otomatis hanya menyimpan file .docx, .odt, dan .rtf; {name} tidak dapat mempertahankan semua pemformatan. Simpan sebagai .docx untuk mengaktifkan Simpan Otomatis.
+\tAutoSave saves every change to the file (needs a saved document)\tSimpan Otomatis menyimpan setiap perubahan ke file (perlu dokumen yang telah disimpan)
+\tBackspace\tBackspace
+\tBanded Columns\tKolom bergaris
+\tBanded Rows\tBaris bergaris
+\tBase text:\tTeks dasar:
+\tBased on: {style}\tBerdasarkan: {style}
+\tBefore:\tSebelum:
+\tBibliography\tDaftar Pustaka
+\tBinary assets added\tAset biner ditambahkan
+\tBinary assets removed\tAset biner dihapus
+\tBlank\tKosong
+\tBlank (Three Columns)\tKosong (Tiga Kolom)
+\tBlank Page\tHalaman Kosong
+\tBlank document\tDokumen kosong
+\tBlock\nAuthors\tBlok\nPenulis
+\tBold\tTebal
+\tBookmark\tPenanda
+\tBookmark name:\tNama penanda:
+\tBookmarks\tPenanda
+\tBorder lines\tGaris batas
+\tBorder Painter\tPelukis Batas
+\tBorder\nPainter\tPelukis\nBatas
+\tBorders\tBatas
+\tBorders and Shading\tBatas dan Bayangan
+\tBorders and Shading…\tBatas dan Bayangan…
+\tBottom Border\tBatas Bawah
+\tBottom Margin\tMargin Bawah
+\tBottom of Page\tBawah Halaman
+\tBottom:\tBawah:
+\tBox\tKotak
+\tBreaks\tPemutus
+\tBring Forward\tBawa ke Depan
+\tBrowse in Lunola Scripta…\tJelajahi di Lunola Scripta…
+\tBrowse…\tJelajahi…
+\tBuilt-in style\tGaya bawaan
+\tBuilt-in styles can't be deleted.\tGaya bawaan tidak dapat dihapus.
+\tBullet\tBullet
+\tBullet Library\tPerpustakaan Bullet
+\tBullets\tBullet
+\tCalendar\tKalender
+\tCancel\tBatal
+\tCan't be deleted\tTidak dapat dihapus
+\tCapitalize first letter of sentences\tHuruf besar huruf pertama kalimat
+\tCapitalize first letter of table cells\tHuruf besar huruf pertama sel tabel
+\tCapitalize names of days\tHuruf besar nama hari
+\tCapitalize Each Word\tHuruf Besar Setiap Kata
+\tCaption text\tTeks keterangan
+\tCaption:\tKeterangan:
+\tCategories\tKategori
+\tCategories:\tKategori:
+\tCategory {n}\tKategori {n}
+\tChange Case\tUbah Huruf
+\tChange List Level\tUbah Tingkat Daftar
+\tChange Password…\tUbah Kata Sandi…
+\tChange Picture\tUbah Gambar
+\tChange Shape\tUbah Bentuk
+\tChanged lines:\tBaris berubah:
+\tChanges\tPerubahan
+\tChapters begin at:\tBab dimulai di:
+\tCharacter\tKarakter
+\tCharacter code:\tKode karakter:
+\tCharacter level\tTingkat karakter
+\tCharacter Position\tPosisi Karakter
+\tCharacter Scale\tSkala Karakter
+\tCharacter Shading\tBayangan Karakter
+\tCharacter Spacing\tSpasi Karakter
+\tCharacter style\tGaya karakter
+\tCharacters\tKarakter
+\tCharacters (no spaces)\tKarakter (tanpa spasi)
+\tCharacters (with spaces)\tKarakter (dengan spasi)
+\tCharacters per line:\tKarakter per baris:
+\tChart\tGrafik
+\tChart Title\tJudul Grafik
+\tCheck Accessibility\tPeriksa Aksesibilitas
+\tCheck Compatibility\tPeriksa Kompatibilitas
+\tCheck Spelling as You Type\tPeriksa Ejaan Saat Mengetik
+\tCheck for Errors\tPeriksa Kesalahan
+\tCheck\nAccessibility\tPeriksa\nAksesibilitas
+\tChecked symbol\tSimbol tercentang
+\tChecked styles are allowed:\tGaya yang diperbolehkan:
+\tChoose a command\tPilih perintah
+\tChoose the sheet that holds the recipients.\tPilih lembar yang berisi penerima.
+\tCitation Style\tGaya Kutipan
+\tCitations & Bibliography\tKutipan & Daftar Pustaka
+\tClear\tHapus
+\tClear All\tHapus Semua
+\tClear All Formatting\tHapus Semua Pemformatan
+\tClear Character Formatting\tHapus Pemformatan Karakter
+\tClear Character Style\tHapus Gaya Karakter
+\tClear Formatting Level\tHapus Tingkat Pemformatan
+\tClear Paragraph Formatting\tHapus Pemformatan Paragraf
+\tClick a border between two cells to merge them. Esc stops.\tKlik batas antara dua sel untuk menggabungkan. Esc untuk berhenti.
+\tClick an item to paste it.\tKlik item untuk menempelkannya.
+\tClick level to modify:\tKlik tingkat untuk mengubah:
+\tClick the empty text box the text should continue in (Esc cancels)\tKlik kotak teks kosong tempat teks harus dilanjutkan (Esc membatalkan)
+\tClick to switch back to inserting\tKlik untuk beralih kembali ke menyisipkan
+\tClipboard\tPapan Klip
+\tClipboard Items\tItem Papan Klip
+\tClipboard Pane\tPanel Papan Klip
+\tClose\tTutup
+\tClose Equation\tTutup Persamaan
+\tClose Header and Footer\tTutup Header dan Footer
+\tCollapse Selection\tCiutkan Pilihan
+\tCol #:\tKol #:
+\tCollate copies\tKopi kolasi
+\tColor\tWarna
+\tColor model:\tModel warna:
+\tColor:\tWarna:
+\tColor: {color}\tWarna: {color}
+\tColorful\tBerwarna
+\tColors\tWarna
+\tColors:\tWarna:
+\tColumn\tKolom
+\tColumn Break\tPemutus Kolom
+\tColumn width\tLebar kolom
+\tColumn:\tKolom:
+\tColumns\tKolom
+\tColumns:\tKolom:
+\tCommands:\tPerintah:
+\tComments\tKomentar
+\tCompare to\tBandingkan dengan
+\tCompared: {changes} changes\tDibandingkan: {changes} perubahan
+\tComparing with another file needs the desktop app.\tMembandingkan dengan file lain memerlukan aplikasi desktop.
+\tComparison\tPerbandingan
+\tCompress punctuation at the start of a line\tKompres tanda baca di awal baris
+\tConfirm password:\tKonfirmasi kata sandi:
+\tContents can't be edited\tKonten tidak dapat diedit
+\tContinue without restoring\tLanjutkan tanpa memulihkan
+\tConvert\tKonversi
+\tCopies\tSalinan
+\tCopy\tSalin
+\tCorrect accidental usage of cAPS LOCK key\tPeriksa penggunaan tombol CAPS LOCK yang tidak sengaja
+\tCorrect TWo INitial CApitals\tPeriksa Dua Huruf Kapital Awal
+\tCouldn't download {name}: {error}\tTidak dapat mengunduh {name}: {error}
+\tCouldn't make Lunola Scripta the default: {error}\tTidak dapat menjadikan Lunola Scripta sebagai default: {error}
+\tCouldn't save {name}, so it is still open and nothing was lost: {error}\tTidak dapat menyimpan {name}, sehingga masih terbuka dan tidak ada yang hilang: {error}
+\tCount by:\tHitung berdasarkan:
+\tCount words in text boxes and notes\tHitung kata dalam kotak teks dan catatan
+\tCreate an interactive outline of your document.\n\nIt's a great way to keep track of where you are or quickly move your content around.\n\nTo get started, go to the Home tab and apply Heading styles to the headings in your document.\tBuat kerangka interaktif dari dokumen Anda.\n\nIni cara yang bagus untuk melacak di mana Anda atau dengan cepat memindahkan konten Anda.\n\nUntuk memulai, buka tab Beranda dan terapkan gaya Judul pada judul di dokumen Anda.
+\tCroatian\tKroasia
+\tCrop on the page works on unturned pictures: set Rotation to 0° first, or use the crop boxes\tPangkas pada halaman bekerja pada gambar yang tidak diputar: atur Rotasi ke 0° terlebih dahulu, atau gunakan kotak pangkas
+\tCross-reference:\tRujukan silang:
+\tCurrent\tSaat ini
+\tCurrent style: {style}\tGaya saat ini: {style}
+\tCustom mark:\tTanda kustom
+\tCustomize Quick Access Toolbar\tKustomisasi Bilah Akses Cepat
+\tCustomize Quick Access Toolbar…\tKustomisasi Bilah Akses Cepat…
+\tCustomize the Ribbon…\tKustomisasi Pita…
+\tCustomize…\tKustomisasi…
+\tCzech\tCeko
+\tDark page (white text on black)\tHalaman gelap (teks putih di atas hitam)
+\tDate format\tFormat tanggal
+\tDate formats:\tFormat tanggal:
+\tDecorative objects only add visual interest: screen readers skip them.\tObjek dekoratif hanya menambah minat visual: pembaca melewatkannya.
+\tDefault tab stops:\tHentian tab default:
+\tDelete\tHapus
+\tDelete Clipboard Item\tHapus Item Papan Klip
+\tDelete Label\tHapus Label
+\tDelete Table Style\tHapus Gaya Tabel
+\tDeleted\tDihapus
+\tDeletions:\tPenghapusan:
+\tDelivery address:\tAlamat pengiriman:
+\tDemote\tTurunkan
+\tDescending\tTurun
+\tDescribe what this object shows, for people who can't see it.\tJelaskan apa yang ditunjukkan objek ini, untuk orang yang tidak dapat melihatnya.
+\tDescribe what this table shows, for people who can't see it.\tJelaskan apa yang ditunjukkan tabel ini, untuk orang yang tidak dapat melihatnya.
+\tDescription:\tDeskripsi:
+\tDetect language automatically\tDeteksi bahasa secara otomatis
+\tdevelopment build\tbuild pengembangan
+\tDiagonal\tDiagonal
+\tDictionaries folder:\tFolder kamus:
+\tDirection:\tArah:
+\tDiscard\tBuang
+\tDiscard the recovery copy of {name}?\tBuang salinan pemulihan {name}?
+\tDiscard…\tBuang…
+\tDiscord\tDiscord
+\tDisplay text\tTampilkan teks
+\tDo not check spelling or grammar\tJangan periksa ejaan atau tata bahasa
+\tDo you want to save changes to {name}?\tApakah Anda ingin menyimpan perubahan ke {name}?
+\tDocument\tDokumen
+\tDocument Grid\tKisi Dokumen
+\tDocument name\tNama dokumen
+\tDocument template:\tTemplate dokumen:
+\tDocument1\tDokumen1
+\tDocuments you open will show up here.\tDokumen yang Anda buka akan muncul di sini.
+\tDon't add space between paragraphs of the same style\tJangan tambahkan spasi antara paragraf dengan gaya yang sama
+\tDon't capitalize after:\tJangan huruf besar setelah:
+\tDon't hyphenate\tJangan tanda hubung
+\tDon't read Zotero, Mendeley or EndNote citations and bibliographies\tJangan baca kutipan dan daftar pustaka Zotero, Mendeley atau EndNote
+\tDon't Save\tJangan Simpan
+\tDrag a rectangle to draw a table, or a line across cells to split them. Esc stops.\tSeret persegi untuk menggambar tabel, atau garis melintasi sel untuk membaginya. Esc untuk berhenti.
+\tEdit Document\tEdit Dokumen
+\tEdit Field…\tEdit Bidang…
+\tEdit…\tEdit…
+\tEdited\tDiedit
+\tEditing\tMengedit
+\tEditing — edit the document directly\tMengedit — edit dokumen secara langsung
+\tEditing header/footer\tMengedit header/footer
+\tEditing in this document is restricted.\tPengeditan dalam dokumen ini dibatasi.
+\tEffects\tEfek
+\tEnclosure\tKandang
+\tEncrypt with Password…\tEnkripsi dengan Kata Sandi…
+\tEndnotes\tCatatan Akhir
+\tEnter bookmark name:\tMasukkan nama penanda:
+\tEnter formatting for number:\tMasukkan pemformatan untuk angka:
+\tEnter page number:\tMasukkan nomor halaman:
+\tEntry marked.\tEntri ditandai.
+\tEnvelope size:\tUkuran amplop:
+\tEqual column width\tLebar kolom sama
+\tEquals:\tSama dengan:
+\tEquation\tPersamaan
+\tEvery command is available to scripts and AI agents: run `wordcraft-cli mcp` for an MCP server, or start the app with `--control <port>` for the JSON control channel.\tSetiap perintah tersedia untuk skrip dan agen AI: jalankan `wordcraft-cli mcp` untuk server MCP, atau mulai aplikasi dengan `--control <port>` untuk saluran kontrol JSON.
+\tEveryone\tSemua orang
+\tExactly\tPersis
+\tExactly {n}\tPersis {n}
+\tExample: {sample}\tContoh: {sample}
+\tExceptions…\tPengecualian…
+\tExisting File or Web Page\tFile atau Halaman Web yang Ada
+\tExport a copy to share (PDF, Word document)\tEkspor salinan untuk dibagikan (PDF, dokumen Word)
+\tExported {path}\tDiekspor {path}
+\tField\tBidang
+\tField code:\tKode bidang:
+\tField codes:\tKode bidang:
+\tField name\tNama bidang
+\tField name:\tNama bidang:
+\tField names:\tNama bidang:
+\tField properties\tProperti bidang
+\tField:\tBidang:
+\tFields:\tBidang:
+\tFile name:\tNama file:
+\tFill\tIsi
+\tFill color:\tWarna isi:
+\tFilter and Sort\tFilter dan Urutkan
+\tFind\tCari
+\tFind Next\tCari Berikutnya
+\tFind Next Editable Region\tCari Region yang Dapat Diedit Berikutnya
+\tFind what:\tCari apa:
+\tFind:\tCari:
+\tFind "{text}" in the document\tCari "{text}" dalam dokumen
+\tFinished\tSelesai
+\tFirst line:\tBaris pertama:
+\tFirst row of data contains column headers\tBaris pertama data berisi header kolom
+\tFocus\tFokus
+\tFollow number with:\tIkuti angka dengan:
+\tFont color:\tWarna font:
+\tFont:\tFont:
+\tFont: {font}\tFont: {font}
+\tFootnotes\tCatatan Kaki
+\tFor which item:\tUntuk item mana:
+\tFormat:\tFormat:
+\tFormatted\tDiformat
+\tFormatting\tPemformatan
+\tFormatting exceptions\tPengecualian pemformatan
+\tFormatting, case changes, white space and tables are compared; the other settings are kept for later.\tPemformatan, perubahan huruf, spasi, dan tabel dibandingkan; pengaturan lainnya disimpan untuk nanti.
+\tFormula:\tRumus:
+\tForward\tMaju
+\tFractions (1/2) as fraction characters (½)\tPecahan (1/2) sebagai karakter pecahan (½)
+\tFrom text:\tDari teks:
+\tfrom Unicode (hex)\tari Unicode (heks)
+\tFull page of the same label\tHalaman penuh label yang sama
+\tGeneral\tUmum
+\tgetartcraft.com/apps/wordcraft\tgetartcraft.com/apps/wordcraft
+\tGlow\tPendar
+\tGlow Colors\tWarna Pendar
+\tGo to\tKe
+\tGo To\tKe
+\tGo To (⌘⌥G)\tKe (⌘⌥G)
+\tGo to what:\tKe apa:
+\tGrab bag\tKantong
+\tGridlines\tGaris kisi
+\tH:\tT:
+\tHeader row\tBaris header
+\tHeading {n}\tJudul {n}
+\tHeading 1\tJudul 1
+\tHeading styles (levels 1–{n})\tGaya judul (tingkat 1–{n})
+\tHeadings\tJudul
+\tHex:\tHeks:
+\tHidden\tTersembunyi
+\tHidden bookmarks\tPenanda tersembunyi
+\tHide from style lists\tSembunyikan dari daftar gaya
+\tHide White Space\tSembunyikan Spasi Putih
+\tHome folder\tFolder beranda
+\tHorizontal\tHorizontal
+\tHyphenate at:\tTanda hubung di:
+\tHyphenate words in CAPS\tTanda hubung kata dalam HURUF BESAR
+\tHyphenation zone:\tZona tanda hubung:
+\tHyphens (--) as dashes (—)\tTanda hubung (--) sebagai garis (—)
+\tIgnore punctuation characters\tAbaikan karakter tanda baca
+\tIgnore white-space characters\tAbaikan karakter spasi
+\tIn Default apps, choose Lunola Scripta for the document types you want it to open.\tDi Aplikasi Default, pilih Lunola Scripta untuk jenis dokumen yang ingin Anda buka.
+\tIn equations, typing a name after a backslash replaces it with its symbol.\tDalam persamaan, mengetik nama setelah garis miring menggantinya dengan simbolnya.
+\tInclude level number from:\tSertakan nomor tingkat dari:
+\tInclude page numbers\tSertakan nomor halaman
+\tIndent\tIndentasi
+\tIndent from left:\tIndentasi dari kiri:
+\tIndentation\tIndentasi
+\tIndented\tDiindentasi
+\tInitials:\tInisial:
+\tInk\tTinta
+\tInsert\tSisipkan
+\tInsert Citation\tSisipkan Kutipan
+\tInsert New Equation\tSisipkan Persamaan Baru
+\tInsert Table\tSisipkan Tabel
+\tInsert a new equation (Alt+=)\tSisipkan persamaan baru (Alt+=)
+\tInsert reference to:\tSisipkan rujukan ke:
+\tInsertions and Deletions\tPenyisipan dan Penghapusan
+\tInsertions:\tPenyisipan:
+\tInside:\tDi dalam:
+\tInterface language:\tBahasa antarmuka:
+\tInterface size:\tUkuran antarmuka:
+\tInterface theme:\tTema antarmuka:
+\tInternet addresses as links\tAlamat internet sebagai tautan
+\tIonosphere\tIonosfer
+\tItalian\tItalia
+\tItalic\tMiring
+\tJoin the Lunola community on Discord\tBergabunglah dengan komunitas Lunola di Discord
+\tJoin us on Discord: discord.gg/artcraft\tBergabunglah dengan kami di Discord: discord.gg/artcraft
+\tKeep lines together\tPertahankan baris bersama
+\tKeep with next\tPertahankan dengan berikutnya
+\tKeyboard shortcuts:\tPintasan keyboard:
+\tKeys for this command:\tTombol untuk perintah ini:
+\tLabel changes with:\tLabel berubah dengan:
+\tLabel:\tLabel:
+\tLandscape\tLanskap
+\tLanguage\tBahasa
+\tLast, First; Last, First\tTerakhir, Pertama; Terakhir, Pertama
+\tLatin text font:\tFont teks Latin:
+\tLeave the equation (Esc)\tTinggalkan persamaan (Esc)
+\tLeave the label out of the caption\tKeluarkan label dari keterangan
+\tLeft:\tKiri:
+\tLeft-to-right\tKiri-ke-kanan
+\tLegal style numbering\tPenomoran gaya hukum
+\tLetter headings\tJudul huruf
+\tLevel {n}\tTingkat {n}
+\tLevels:\tTingkat:
+\tLimit consecutive hyphens to:\tBatasi tanda hubung berurutan hingga:
+\tLimit formatting to a selection of styles\tBatasi pemformatan pada pilihan gaya
+\tLine and Page Breaks\tPemutus Baris dan Halaman
+\tLine between\tGaris di antara
+\tLine breaking\tPemutusan baris
+\tLine spacing\tSpasi baris
+\tLine spacing:\tSpasi baris:
+\tLines and characters\tBaris dan karakter
+\tLines only\tBaris saja
+\tLines per page:\tBaris per halaman:
+\tLink entries to their headings\tTautkan entri ke judulnya
+\tLink level to style:\tTautkan tingkat ke gaya:
+\tLink to:\tTautkan ke:
+\tLinked style (paragraph and character)\tGaya tertaut (paragraf dan karakter)
+\tList Definition\tDefinisi Daftar
+\tList entries\tEntri daftar
+\tLoad System Installed Fonts…\tMuat Font yang Terinstal Sistem…
+\tLocal recovery is unavailable or still loading.\tPemulihan lokal tidak tersedia atau sedang dimuat.
+\tLocation\tLokasi
+\tLocation: {path}\tLokasi: {path}
+\tLunola Scripta\tLunola Scripta
+\tLunola Scripta is now the default app for Word documents.\tLunola Scripta sekarang menjadi aplikasi default untuk dokumen Word.
+\tMade from the author and year when empty\tDibuat dari penulis dan tahun saat kosong
+\tMain entry:\tEntri utama:
+\tMake Lunola Scripta the default for Word documents…\tJadikan Lunola Scripta sebagai default untuk dokumen Word…
+\tManage Styles…\tKelola Gaya…
+\tManual hyphenation is complete.\tTanda hubung manual selesai.
+\tManual…\tManual…
+\tMany pages\tBanyak halaman
+\tMargins\tMargin
+\tMark\tTandai
+\tMark All\tTandai Semua
+\tMark as decorative\tTandai sebagai dekoratif
+\tMark Entry…\tTandai Entri…
+\tMark selected text as:\tTandai teks yang dipilih sebagai:
+\tMatch case\tCocokkan huruf
+\tMatch prefix\tCocokkan awalan
+\tMatch suffix\tCocokkan akhiran
+\tMeasurement units:\tSatuan pengukuran:
+\tMesosphere\tMesosfer
+\tMirror indents\tCerminkan indentasi
+\tMirror margins\tCerminkan margin
+\tMIT OR Apache-2.0. Copyright (c) 2026 Lunola Team and the Lunola Scripta contributors.\tMIT OR Apache-2.0. Hak Cipta (c) 2026 Tim Lunola dan kontributor Lunola Scripta.
+\tModify Table Style…\tUbah Gaya Tabel…
+\tModify…\tUbah…
+\tMore >>\tLebih >>
+\tMore Colors…\tWarna Lainnya…
+\tMore Commands…\tPerintah Lainnya…
+\tMore templates →\tTemplate lainnya →
+\tMoved from\tDipindahkan dari
+\tMoved objects snap to the page's edges and centre, the margins and other objects. Hold Alt to move freely.\tObjek yang dipindahkan menempel ke tepi dan pusat halaman, margin, dan objek lainnya. Tahan Alt untuk bergerak bebas.
+\tMoved to\tDipindahkan ke
+\tName\tNama
+\tName:\tNama:
+\tNavigation Pane\tPanel Navigasi
+\tNew\tBaru
+\tNew Comment\tKomentar Baru
+\tNew Document\tDokumen Baru
+\tNew Entry\tEntri Baru
+\tNew Group\tGrup Baru
+\tNew Label…\tLabel Baru…
+\tNew shortcut:\tPintasan baru:
+\tNew Style…\tGaya Baru…
+\tNew Tab\tTab Baru
+\tNew word\tKata baru
+\tNew…\tBaru…
+\tNext\tBerikutnya
+\tNext Page\tHalaman Berikutnya
+\tNext sentence\tKalimat berikutnya
+\tNo\tTidak
+\tNo accessibility issues found.\tTidak ada masalah aksesibilitas ditemukan.
+\tNo contributor data was built into this copy.\tTidak ada data kontributor yang dibangun ke dalam salinan ini.
+\tNo document is open. Create a document or open one first.\tTidak ada dokumen yang terbuka. Buat dokumen atau buka terlebih dahulu.
+\tNo errors found: every merge field is in the recipient list.\tTidak ada kesalahan ditemukan: setiap bidang penggabungan ada dalam daftar penerima.
+\tNo grid\tTidak ada kisi
+\tNo header row\tTidak ada baris header
+\tNo icons match your search.\tTidak ada ikon yang cocok dengan pencarian Anda.
+\tNo limit\tTidak ada batas
+\tNo model credits were built into this copy.\tTidak ada kredit model yang dibangun ke dalam salinan ini.
+\tNo recovery copies.\tTidak ada salinan pemulihan.
+\tNo sources yet.\tBelum ada sumber.
+\tNo spelling dictionary for {language} is installed, so it isn't checked. Lunola Scripta looks for the Hunspell dictionary {name} in the WORDCRAFT_DICTIONARIES folder and in the usual system locations.\tTidak ada kamus ejaan untuk {language} yang terinstal, sehingga tidak diperiksa. Lunola Scripta mencari kamus Hunspell {name} di folder WORDCRAFT_DICTIONARIES dan di lokasi sistem biasa.
+\tNo templates match your search.\tTidak ada template yang cocok dengan pencarian Anda.
+\tNone\tTidak ada
+\tNormal speed\tKecepatan normal
+\tNot {name}\tBukan {name}
+\tNot available right now\tTidak tersedia saat ini
+\tNot linked: click a text box\tTidak tertaut: klik kotak teks
+\tNot saved\tBelum disimpan
+\tNot saved yet\tBelum disimpan
+\tNot set: the system's usual places\tTidak diatur: lokasi biasa sistem
+\tNot used by any command\tTidak digunakan oleh perintah apa pun
+\tNothing\tTidak ada
+\tNothing collected yet. Items you copy or cut appear here.\tBelum ada yang dikumpulkan. Item yang Anda salin atau potong muncul di sini.
+\tNothing of this type in the document.\tTidak ada jenis ini dalam dokumen.
+\tNow used by {command}\tSekarang digunakan oleh {command}
+\tNumber alignment:\tPenjajaran angka:
+\tNumber format\tFormat angka
+\tNumber of columns:\tJumlah kolom:
+\tNumber of rows:\tJumlah baris:
+\tNumber style for this level:\tGaya angka untuk tingkat ini:
+\tNumbering\tPenomoran
+\tNumbering…\tPenomoran…
+\tNumerals:\tAngka:
+\tOffset (pt):\tOffset (pt):
+\tOK\tOK
+\tOmit\tHilangkan
+\tOne label per recipient\tSatu label per penerima
+\tOne line per item. Enter adds an item.\tSatu baris per item. Enter menambahkan item.
+\tOne Page\tSatu Halaman
+\tOnly allow this kind of editing:\tHanya izinkan jenis pengeditan ini:
+\tOnly web (http, https) and email (mailto) links can be followed\tHanya tautan web (http, https) dan email (mailto) yang dapat diikuti
+\tOpen a file with Lunola Scripta's own browser when the system file dialog doesn't appear.\tBuka file dengan browser Lunola Scripta sendiri ketika dialog file sistem tidak muncul.
+\tOpening print dialog…\tMembuka dialog cetak…
+\tOpens .docx, .doc, .rtf and .odt files and Word templates with Lunola Scripta from now on.\tMembuka file .docx, .doc, .rtf, dan .odt serta template Word dengan Lunola Scripta mulai sekarang.
+\tOpens Settings › Default apps, where you choose Lunola Scripta for .docx and the other document types.\tMembuka Pengaturan › Aplikasi Default, di mana Anda memilih Lunola Scripta untuk .docx dan jenis dokumen lainnya.
+\tOptions\tOpsi
+\tOptions…\tOpsi…
+\tOr\tAtau
+\tOr save a copy in another format:\tAtau simpan salinan dalam format lain:
+\tOrdinals (1st) as superscript\tOrdinal (1st) sebagai superskrip
+\tOrganizer…\tPenyelenggara…
+\tOrientation\tOrientasi
+\tOther styles and their TOC level:\tGaya lain dan tingkat Daftar Isi:
+\tOtherwise insert:\tJika tidak, sisipkan:
+\tOutline levels\tTingkat kerangka
+\tOutside:\tDi luar:
+\tOvertype\tTimpa
+\tPage {page}\tHalaman {page}
+\tPage {page} of {pages}\tHalaman {page} dari {pages}
+\tPage break before\tPemutus halaman sebelumnya
+\tPage Breaks\tPemutus Halaman
+\tPage numbers at the right margin\tNomor halaman di margin kanan
+\tPage width\tLebar halaman
+\tPages\tHalaman
+\tPages like 1-3, 5\tHalaman seperti 1-3, 5
+\tPages of bookmark:\tHalaman penanda:
+\tParagraph\tParagraf
+\tParagraph style\tGaya paragraf
+\tPassword:\tKata sandi:
+\tPaste\tTempel
+\tPaste All\tTempel Semua
+\tPaste as:\tTempel sebagai:
+\tPaste function:\tFungsi tempel:
+\tPaste Clipboard Item\tTempel Item Papan Klip
+\tPause\tJeda
+\tPaused\tDijeda
+\tPick a custom group (New Group makes one)\tPilih grup kustom (Grup Baru membuat satu)
+\tPick a field from the list\tPilih bidang dari daftar
+\tPlace in This Document\tTempatkan dalam Dokumen Ini
+\tPlaceholder text\tTeks placeholder
+\tPlay\tPutar
+\tPolish\tPolandia
+\tPortrait\tPotret
+\tPortuguese (Brazil)\tPortugis (Brasil)
+\tPosition:\tPosisi:
+\tPreferred width:\tLebar yang diinginkan:
+\tPreserve formatting during updates\tPertahankan pemformatan selama pembaruan
+\tPresets\tPreset
+\tPress a key combination\tTekan kombinasi tombol
+\tPreview\tPratinjau
+\tPrevious\tSebelumnya
+\tPrevious Page\tHalaman Sebelumnya
+\tPrevious sentence\tKalimat sebelumnya
+\tPrint\tCetak
+\tPrint failed: {error}\tCetak gagal: {error}
+\tPrint Layout\tTata Letak Cetak
+\tPrint Markup\tCetak Penanda
+\tPrint the page color\tCetak warna halaman
+\tPromote\tNaikkan
+\tProperties\tProperti
+\tProtect Document\tLindungi Dokumen
+\tpt\tpt
+\tPut the caret in a content control first.\tLetakkan kursor dalam konten kontrol terlebih dahulu.
+\tPut the default commands back on the Quick Access Toolbar?\tKembalikan perintah default ke Bilah Akses Cepat?
+\tQuick Access Toolbar\tBilah Akses Cepat
+\tQuick Tables\tTabel Cepat
+\tRead Aloud\tBaca dengan Keras
+\tRead Mode\tMode Baca
+\tReading Highlight\tSorotan Bacaan
+\tReading Mode\tMode Bacaan
+\tRecent\tTerbaru
+\tRecent Colors\tWarna Terbaru
+\tRecent documents to show:\tDokumen terbaru untuk ditampilkan:
+\tRecently used symbols:\tSimbol yang baru digunakan:
+\tRecipients: {count}\tPenerima: {count}
+\tRecovery copy\tSalinan pemulihan
+\tRecovery is disabled while this document has a password.\tPemulihan dinonaktifkan selama dokumen ini memiliki kata sandi.
+\tRedo\tUlangi
+\tReference type:\tJenis rujukan:
+\tReflection\tRefleksi
+\tRefresh\tSegarkan
+\tRegion:\tWilayah:
+\tRegular expressions\tEkspresi reguler
+\tRemove\tHapus
+\tRemove condition\tHapus kondisi
+\tRemove every custom shortcut and restore the built-in keys?\tHapus semua pintasan kustom dan kembalikan tombol bawaan?
+\tRemove every custom tab and group and show all tabs again?\tHapus semua tab dan grup kustom dan tampilkan semua tab lagi?
+\tRemove field\tHapus bidang
+\tRemove from Quick Access Toolbar\tHapus dari Bilah Akses Cepat
+\tRemove Password\tHapus Kata Sandi
+\tRemove Pen\tHapus Pen
+\tRemove recipient\tHapus penerima
+\tRemove row\tHapus baris
+\tRemove series\tHapus seri
+\tRemove the control once edited\tHapus kontrol setelah diedit
+\tRename\tGanti Nama
+\tRename Document\tGanti Nama Dokumen
+\tRename…\tGanti Nama…
+\tReopen\tBuka Kembali
+\tRepeat as header row on each page\tUlangi sebagai baris header di setiap halaman
+\tReplace\tGanti
+\tReplace All\tGanti Semua
+\tReplace text as you type\tGanti teks saat Anda mengetik
+\tReplace with:\tGanti dengan:
+\tReplace:\tGanti:
+\tReply\tBalas
+\tReset\tAtur Ulang
+\tReset All…\tAtur Ulang Semua…
+\tReset Crop\tAtur Ulang Pangkas
+\tReset…\tAtur Ulang…
+\tResolve\tSelesaikan
+\tResolved\tSelesai
+\tRestart list after:\tMulai ulang daftar setelah:
+\tRestore\tPulihkan
+\tRestore opens an unsaved copy. Your original file stays unchanged.\tPulihkan membuka salinan yang belum disimpan. File asli Anda tetap tidak berubah.
+\tResult\tHasil
+\tReturn address labels\tLabel alamat pengembalian
+\tReturn address:\tAlamat pengembalian:
+\tReverse the order\tBalikkan urutan
+\tReviewing\tMeninjau
+\tReviewing — edits become suggestions\tMeninjau — perubahan menjadi saran
+\tRewind\tMundur
+\tRibbon and Quick Access Toolbar:\tPita dan Bilah Akses Cepat:
+\tRibbon tabs\tTab pita
+\tRight:\tKanan:
+\tRight-to-left\tKanan-ke-kiri
+\tRotation:\tRotasi:
+\tRow:\tBaris:
+\tRuby text:\tTeks ruby:
+\tRuler\tPenggaris
+\tRun-in\tRun-in
+\tRussian\tRusia
+\tSave\tSimpan
+\tSave a copy in another format. Printing goes through a PDF you can print from any viewer.\tSimpan salinan dalam format lain. Pencetakan melalui PDF yang dapat Anda cetak dari viewer mana pun.
+\tSave the document to turn on AutoSave\tSimpan dokumen untuk mengaktifkan Simpan Otomatis
+\tSave the document to turn on AutoSave (a file you have only opened isn't rewritten until you save it)\tSimpan dokumen untuk mengaktifkan Simpan Otomatis (file yang hanya Anda buka tidak ditulis ulang sampai Anda menyimpannya)
+\tSave these pages as PDF…\tSimpan halaman ini sebagai PDF…
+\tSaved\tDisimpan
+\tSaving {name} was cancelled, so it is still open and nothing was lost.\tMenyimpan {name} dibatalkan, sehingga masih terbuka dan tidak ada yang hilang.
+\tScale Drawing\tSkala Gambar
+\tScroll ribbon left\tGulir pita ke kiri
+\tScroll ribbon right\tGulir pita ke kanan
+\tSearch\tCari
+\tSearch commands and help\tCari perintah dan bantuan
+\tSearch document\tCari dokumen
+\tSearch for templates\tCari template
+\tSearch icons\tCari ikon
+\tSearch Options\tOpsi Pencarian
+\tSection Breaks\tPemutus Bagian
+\tSection direction:\tArah bagian:
+\tSee\tLihat
+\tselect a picture first\tpilih gambar terlebih dahulu
+\tSelect a picture, shape, chart or table to describe it.\tPilih gambar, bentuk, grafik, atau tabel untuk mendeskripsikannya.
+\tSelect a place in this document:\tPilih tempat dalam dokumen ini:
+\tSelect recipients first to choose from their fields.\tPilih penerima terlebih dahulu untuk memilih dari bidang mereka.
+\tSelect recipients first to match their fields.\tPilih penerima terlebih dahulu untuk mencocokkan bidang mereka.
+\tSelect text, then tick who can still edit it.\tPilih teks, lalu centang siapa yang masih dapat mengeditnya.
+\tSend the document straight to the system print dialog, or save a copy in another format below.\tKirim dokumen langsung ke dialog cetak sistem, atau simpan salinan dalam format lain di bawah.
+\tSentence\tKalimat
+\tSeparator:\tPemisah:
+\tSequence name:\tNama urutan:
+\tSeries {n}\tSeri {n}
+\tSeries name\tNama seri
+\tSet As Default\tAtur Sebagai Default
+\tSetting:\tPengaturan:
+\tSettings…\tPengaturan…
+\tShadow\tBayangan
+\tShare\tBagikan
+\tShipping labels\tLabel pengiriman
+\tShortcut key:\tTombol pintasan:
+\tShow\tTampilkan
+\tShow First Line Only\tTampilkan Baris Pertama Saja
+\tShow KeyTips (Alt or F10)\tTampilkan KeyTips (Alt atau F10)
+\tShow Level\tTampilkan Tingkat
+\tShow Text Formatting\tTampilkan Pemformatan Teks
+\tShow alignment guides when moving pictures and shapes\tTampilkan panduan penjajaran saat memindahkan gambar dan bentuk
+\tShow all formatting marks\tTampilkan semua tanda pemformatan
+\tShow documents with their colours inverted, like View › Switch Modes. Saving, printing and PDFs are unchanged.\tTampilkan dokumen dengan warna terbalik, seperti Lihat › Mode Sakelar. Menyimpan, mencetak, dan PDF tidak berubah.
+\tShow every bibliography field\tTampilkan setiap bidang daftar pustaka
+\tShow in the Styles gallery\tTampilkan di galeri gaya
+\tShow rulers\tTampilkan penggaris
+\tShow the community button in the title bar\tTampilkan tombol komunitas di bilah judul
+\tShow the mini toolbar when text is selected\tTampilkan bilah alat mini saat teks dipilih
+\tShow the Start screen when Lunola Scripta starts\tTampilkan layar Mulai saat Lunola Scripta dimulai
+\tShowing the first {count} items.\tMenampilkan {count} item pertama.
+\tSingle label\tLabel tunggal
+\tSize (pt):\tUkuran (pt):
+\tSize:\tUkuran:
+\tSkip citations & bibliography\tLewati kutipan & daftar pustaka
+\tSmall caps\tHuruf kecil kapital
+\tSmart quotes instead of straight quotes\tKutipan pintar sebagai pengganti kutipan lurus
+\tSoft Edges\tTepi Lembut
+\tSort\tUrutkan
+\tSort by:\tUrutkan berdasarkan:
+\tSort order:\tUrutan pengurutan:
+\tSource code: github.com/storytold/wordcraft\tKode sumber: github.com/storytold/wordcraft
+\tSource type:\tJenis sumber:
+\tSources in this document:\tSumber dalam dokumen ini:
+\tSpace\tSpasi
+\tSpace after: {pt} pt\tSpasi setelah: {pt} pt
+\tSpace before/after:\tSpasi sebelum/sesudah:
+\tSpace before: {pt} pt\tSpasi sebelum: {pt} pt
+\tSpacing\tSpasi
+\tSpacing (pt):\tSpasi (pt):
+\tSpacing:\tSpasi:
+\tSpecial\tKhusus
+\tSpecify height:\tTentukan tinggi:
+\tSpeed\tKecepatan
+\tStandard Colors\tWarna Standar
+\tStart at:\tMulai di:
+\tStart Enforcing Protection\tMulai Penegakan Perlindungan
+\tStatistics\tStatistik
+\tStop\tBerhenti
+\tStop Protection\tHentikan Perlindungan
+\tStopped\tDihentikan
+\tStrikethrough\tCoret
+\tStroke {n} of {total}\tGoresan {n} dari {total}
+\tStyle\tGaya
+\tStyle based on:\tGaya berdasarkan:
+\tStyle Inspector\tInspektor Gaya
+\tStyle name:\tNama gaya:
+\tStyle:\tGaya:
+\tStyle: {style}\tGaya: {style}
+\tStyles Pane\tPanel Gaya
+\tStyles:\tGaya:
+\tSubentry:\tSubentri:
+\tSubmitting print job…\tMengirim pekerjaan cetak…
+\tSubscript\tSubskrip
+\tSubset:\tSubset:
+\tSuggested\tDisarankan
+\tSuperscript\tSuperskrip
+\tSuppress line numbers\tSembunyikan nomor baris
+\tSynonyms\tSinonim
+\tTab character\tKarakter tab
+\tTab leader:\tPemimpin tab:
+\tTab stops to be cleared:\tHentian tab yang akan dihapus:
+\tTable\tTabel
+\tTable Column Width\tLebar Kolom Tabel
+\tTable direction:\tArah tabel:
+\tTable Row Height\tTinggi Baris Tabel
+\tTable style\tGaya tabel
+\tTabs\tTab
+\tTabs…\tTab…
+\tTag\tTag
+\tTC entry fields\tBidang entri TC
+\tText\tTeks
+\tText Fill\tIsi Teks
+\tText Outline\tGaris Teks
+\tText indent at:\tIndentasi teks di:
+\tText size\tUkuran teks
+\tText snaps to characters\tTeks menempel pada karakter
+\tText to display:\tTeks untuk ditampilkan:
+\tText:\tTeks:
+\tThat format doesn't keep everything, so the document is still open. Save it as a Word document (.docx) to go on.\tFormat itu tidak menyimpan semuanya, sehingga dokumen masih terbuka. Simpan sebagai dokumen Word (.docx) untuk melanjutkan.
+\tThat password isn't right. Check it (passwords are case-sensitive) and try again.\tKata sandi itu tidak benar. Periksa (kata sandi peka huruf besar/kecil) dan coba lagi.
+\tThe clipboard is empty.\tPapan klip kosong.
+\tThe document has no bookmarks yet.\tDokumen belum memiliki penanda.
+\tThe document will be saved with a password. Save it to protect it.\tDokumen akan disimpan dengan kata sandi. Simpan untuk melindunginya.
+\tThe new style takes the formatting of the current paragraph.\tGaya baru mengambil pemformatan paragraf saat ini.
+\tThe password is optional; without it anyone can stop the protection.\tKata sandi bersifat opsional; tanpanya siapa pun dapat menghentikan perlindungan.
+\tThe password is removed. Save the document to keep the change.\tKata sandi dihapus. Simpan dokumen untuk menyimpan perubahan.
+\tThe passwords don't match.\tKata sandi tidak cocok.
+\tThe printer, two-sided printing and pages per sheet are chosen in that dialog.\tPencetak, pencetakan dua sisi, dan halaman per lembar dipilih dalam dialog itu.
+\tThe recipient-list field that fills each part of an address block and greeting line.\tBidang daftar penerima yang mengisi setiap bagian blok alamat dan baris salam.
+\tTheme Colors\tWarna Tema
+\tThen insert:\tKemudian sisipkan:
+\tThese merge fields aren't in the recipient list:\tBidang penggabungan ini tidak ada dalam daftar penerima:
+\tThis cannot be undone. Your original file stays unchanged.\tIni tidak dapat dibatalkan. File asli Anda tetap tidak berubah.
+\tThis document\tDokumen ini
+\tThis document has no bookmarks.\tDokumen ini tidak memiliki penanda.
+\tThis field has no options.\tBidang ini tidak memiliki opsi.
+\tThis folder can't be read: {error}\tFolder ini tidak dapat dibaca: {error}
+\tThis font has no characters to show.\tFont ini tidak memiliki karakter untuk ditampilkan.
+\tThis page\tHalaman ini
+\tThis password type isn't supported.\tJenis kata sandi ini tidak didukung.
+\tThis section\tBagian ini
+\tTitle\tJudul
+\tTitle:\tJudul:
+\tTo open Word documents with Lunola Scripta by default: select one in Finder, choose File › Get Info, pick Lunola Scripta under Open with, then click Change All.\tUntuk membuka dokumen Word dengan Lunola Scripta secara default: pilih satu di Finder, pilih File › Info, pilih Lunola Scripta di bawah Buka dengan, lalu klik Ubah Semua.
+\tToday\tHari ini
+\tToggle Field Codes\tAlihkan Kode Bidang
+\tTop of the Document\tAtas Dokumen
+\tTop:\tAtas:
+\tTrack Changes: On\tLacak Perubahan: Aktif
+\tTrack formatting\tLacak pemformatan
+\tTransform\tTransformasi
+\tTurkish\tTurki
+\tType +2 or -1 to move from the page you are on.\tKetik +2 atau -1 untuk berpindah dari halaman Anda.
+\tType a page number, or +2 / -1.\tKetik nomor halaman, atau +2 / -1.
+\tType the categories down the side and a column of values per series.\tKetik kategori di sisi dan kolom nilai per seri.
+\tType the field's name and its switches, for example PAGE \\* roman.\tKetik nama bidang dan sakelarnya, misalnya PAGE \\* roman.
+\tType the password to stop the protection.\tKetik kata sandi untuk menghentikan perlindungan.
+\tType the recipients, or load them from a file.\tKetik penerima, atau muat dari file.
+\tType:\tKetik:
+\tUnchecked symbol\tSimbol tidak tercentang
+\tUnderline\tGaris bawah
+\tUndo {n} Actions\tUrungkan {n} Tindakan
+\tUndo 1 Action\tUrungkan 1 Tindakan
+\tUndo History\tRiwayat Urungkan
+\tUp one level\tNaik satu tingkat
+\tUpdate Field\tPerbarui Bidang
+\tUpdate fields before printing\tPerbarui bidang sebelum mencetak
+\tUpdate to Match\tPerbarui untuk Mencocokkan
+\tUpdate to Match Selection\tPerbarui untuk Mencocokkan Pilihan
+\tUse an Existing List…\tGunakan Daftar yang Ada…
+\tUse wildcards\tGunakan wildcard
+\tUser name:\tNama pengguna:
+\tValue\tNilai
+\tVersion {version} ({build})\tVersi {version} ({build})
+\tVertical alignment:\tPenjajaran vertikal:
+\tW:\tL:
+\tWait for the print job to finish submitting before closing.\tTunggu pekerjaan cetak selesai dikirim sebelum menutup.
+\tWaiting for the save to finish…\tMenunggu penyimpanan selesai…
+\tWaiting for Zotero…\tMenunggu Zotero…
+\tWeb Layout\tTata Letak Web
+\tWeight\tBerat
+\tWhole document\tSeluruh dokumen
+\tWhole page\tSeluruh halaman
+\tWhole words\tSeluruh kata
+\tWidow/Orphan control\tKontrol Janda/Yatim
+\tWidth and spacing\tLebar dan spasi
+\tWidth:\tLebar:
+\tWith:\tDengan:
+\tWord level\tTingkat kata
+\tWrap Text\tBungkus Teks
+\tWrap Text Sides\tBungkus Sisi Teks
+\tWrite a reply\tTulis balasan
+\tWrite Your World.\tTulis Dunia Anda.
+\tYes\tYa
+\tYour changes will be lost if you don't save them.\tPerubahan Anda akan hilang jika tidak disimpan.
+\tZoom\tZoom
+\tZoom In\tZoom In
+\tZoom Out\tZoom Out
+\tZotero: cancelled\tZotero: dibatalkan
+\tZotero: done\tZotero: selesai

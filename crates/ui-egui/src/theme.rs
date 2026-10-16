@@ -4,9 +4,85 @@ use std::sync::Arc;
 
 use egui::{Align2, Color32, CornerRadius, FontData, FontDefinitions, FontFamily, FontId, Rect, Stroke, Visuals};
 
-/// WordCraft's app colour (and its darker ink for text on light backgrounds).
-pub const APP_COLOR: Color32 = Color32::from_rgb(0x3B, 0x5B, 0xDB);
-pub const APP_INK: Color32 = Color32::from_rgb(0x2B, 0x47, 0xB5);
+/// The Lunola brand name, for the window title, About box and elsewhere.
+pub const LUNOLA_BRAND: &str = "Lunola Scripta";
+
+/// Lunola Scripta's app colour (and its darker ink for text on light backgrounds).
+pub const APP_COLOR: Color32 = Color32::from_rgb(0x32, 0x8B, 0xE6);
+pub const APP_INK: Color32 = Color32::from_rgb(0x1E, 0x5A, 0xA0);
+
+/// Shared Lunola spacing scale, in points. These are the canonical gaps, paddings and
+/// margins every Lunola app draws with: `xs` for tight icon-to-label gaps, `sm` between
+/// related controls, `md` between groups, `lg` between sections and `xl` between major
+/// regions of a pane or dialog. Apps draw at these sizes (scaled by their interface-size
+/// setting) so a button in Scripta sits the same distance from its neighbour as one in
+/// PhotoCraft or PdfCraft.
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct Spacing {
+    /// Tight: icon-to-label, tag gaps. 4 pt.
+    pub xs: f32,
+    /// Small: controls within a group. 6 pt.
+    pub sm: f32,
+    /// Medium: between groups in a dialog. 10 pt.
+    pub md: f32,
+    /// Large: between sections. 16 pt.
+    pub lg: f32,
+    /// Extra large: between major regions. 24 pt.
+    pub xl: f32,
+}
+
+impl Spacing {
+    /// The shared Lunola spacing scale.
+    pub const SCALE: Spacing = Spacing { xs: 4.0, sm: 6.0, md: 10.0, lg: 16.0, xl: 24.0 };
+
+    /// The spacing scale for a given interface-size zoom factor, so gaps scale with the
+    /// interface size setting (like egui's own spacing).
+    pub fn scaled(self, zoom: f32) -> Spacing {
+        Spacing {
+            xs: self.xs * zoom,
+            sm: self.sm * zoom,
+            md: self.md * zoom,
+            lg: self.lg * zoom,
+            xl: self.xl * zoom,
+        }
+    }
+}
+
+impl Default for Spacing {
+    fn default() -> Self {
+        Self::SCALE
+    }
+}
+
+/// Shared Lunola border radius scale, in points. Controls, cards, panels and menus share
+/// these so a button or dialog corner looks the same across every Lunola app.
+#[derive(Clone, Copy, Debug, PartialEq)]
+pub struct Radius {
+    /// Controls (buttons, inputs, chips). 4 pt.
+    pub control: f32,
+    /// Cards and small panels. 6 pt.
+    pub card: f32,
+    /// Dialogs and overlays. 8 pt.
+    pub dialog: f32,
+    /// Pills and circular buttons. 999 pt (a full circle).
+    pub pill: f32,
+}
+
+impl Radius {
+    /// The shared Lunola border radius scale.
+    pub const SCALE: Radius = Radius { control: 4.0, card: 6.0, dialog: 8.0, pill: 999.0 };
+
+    /// The radius scale for a given interface-size zoom factor.
+    pub fn scaled(self, zoom: f32) -> Radius {
+        Radius { control: self.control * zoom, card: self.card * zoom, dialog: self.dialog * zoom, pill: 999.0 }
+    }
+}
+
+impl Default for Radius {
+    fn default() -> Self {
+        Self::SCALE
+    }
+}
 
 /// The interface theme setting (File › Options › General, View › Interface Theme): a fixed light or
 /// dark palette, or `System`, which follows the OS light/dark appearance live (#115). Dark page
@@ -306,7 +382,7 @@ impl Tokens {
             ruler_margin: Color32::from_rgb(0xD4, 0xD4, 0xD4),
             ruler_tick: Color32::from_rgb(0x70, 0x70, 0x70),
             status_bar: Color32::from_rgb(0xF0, 0xF0, 0xF0),
-            selection: Color32::from_rgba_unmultiplied(0x3B, 0x5B, 0xDB, 0x48),
+            selection: Color32::from_rgba_unmultiplied(0x32, 0x8B, 0xE6, 0x48),
             find_highlight: Color32::from_rgba_unmultiplied(0xFF, 0xE0, 0x3D, 0x90),
             page_shadow: Color32::from_rgba_unmultiplied(0, 0, 0, 0x22),
             handle: Color32::WHITE,
@@ -338,8 +414,8 @@ impl Tokens {
             hover: Color32::from_rgb(0x3D, 0x3D, 0x3D),
             pressed: Color32::from_rgb(0x4A, 0x4A, 0x4A),
             checked: Color32::from_rgb(0x2E, 0x3A, 0x66),
-            accent: Color32::from_rgb(0x7A, 0x93, 0xF0),
-            accent_text: Color32::from_rgb(0x9C, 0xB0, 0xF5),
+            accent: Color32::from_rgb(0x64, 0xA0, 0xF0),
+            accent_text: Color32::from_rgb(0x82, 0xB4, 0xFA),
             // Dark text on the light dark-theme accent: white on #7a93f0 is only 2.9:1 (#655).
             on_accent: Color32::from_rgb(0x11, 0x16, 0x2E),
             input: Color32::from_rgb(0x1E, 0x1E, 0x1E),
@@ -350,7 +426,7 @@ impl Tokens {
             ruler_margin: Color32::from_rgb(0x2E, 0x2E, 0x2E),
             ruler_tick: Color32::from_rgb(0xB4, 0xB4, 0xB4),
             status_bar: Color32::from_rgb(0x1F, 0x1F, 0x1F),
-            selection: Color32::from_rgba_unmultiplied(0x7A, 0x93, 0xF0, 0x55),
+            selection: Color32::from_rgba_unmultiplied(0x64, 0xA0, 0xF0, 0x55),
             find_highlight: Color32::from_rgba_unmultiplied(0xC8, 0xA8, 0x00, 0x70),
             page_shadow: Color32::from_rgba_unmultiplied(0, 0, 0, 0x60),
             handle: Color32::from_rgb(0xF2, 0xF2, 0xF2),
