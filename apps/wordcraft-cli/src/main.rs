@@ -1,4 +1,4 @@
-//! `wordcraft-cli`: WordCraft from the command line.
+//! `wordcraft-cli`: Lunola Scripta from the command line.
 #![deny(clippy::unwrap_used, clippy::expect_used, clippy::panic, clippy::unimplemented, clippy::todo, clippy::unreachable)]
 
 mod automation_args;
@@ -13,7 +13,7 @@ use serde_json::{Value, json};
 use wordcraft_engine::Session;
 
 const USAGE: &str = "\
-wordcraft-cli — WordCraft from the command line
+wordcraft-cli — Lunola Scripta from the command line
 
 USAGE:
   wordcraft-cli convert <in> <out> [--markup] [--format wordml2003|flatopc]
@@ -450,7 +450,7 @@ fn run<S: AsRef<OsStr>>(args: &[S]) -> Result<(), Failure> {
                     return Err("mcp: --author applies to the headless server; with --connect, run file.setAuthor".into());
                 }
                 Some(addr) => {
-                    let remote = wordcraft_mcp::Remote::connect(&addr).map_err(|e| format!("can't reach the WordCraft app at {addr}: {e}"))?;
+                    let remote = wordcraft_mcp::Remote::connect(&addr).map_err(|e| format!("can't reach the Lunola Scripta app at {addr}: {e}"))?;
                     if let Some(w) = remote.key_warning() {
                         eprintln!("wordcraft-cli: {w}");
                     }
