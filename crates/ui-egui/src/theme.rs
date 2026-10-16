@@ -4,9 +4,9 @@ use std::sync::Arc;
 
 use egui::{Align2, Color32, CornerRadius, FontData, FontDefinitions, FontFamily, FontId, Rect, Stroke, Visuals};
 
-/// WordCraft's app colour (and its darker ink for text on light backgrounds).
-pub const APP_COLOR: Color32 = Color32::from_rgb(0x3B, 0x5B, 0xDB);
-pub const APP_INK: Color32 = Color32::from_rgb(0x2B, 0x47, 0xB5);
+/// Lunola Scripta's app colour (and its darker ink for text on light backgrounds).
+pub const APP_COLOR: Color32 = Color32::from_rgb(0x32, 0x8B, 0xE6);
+pub const APP_INK: Color32 = Color32::from_rgb(0x1E, 0x5A, 0xA0);
 
 /// The interface theme setting (File › Options › General, View › Interface Theme): a fixed light or
 /// dark palette, or `System`, which follows the OS light/dark appearance live (#115). Dark page
@@ -306,7 +306,7 @@ impl Tokens {
             ruler_margin: Color32::from_rgb(0xD4, 0xD4, 0xD4),
             ruler_tick: Color32::from_rgb(0x70, 0x70, 0x70),
             status_bar: Color32::from_rgb(0xF0, 0xF0, 0xF0),
-            selection: Color32::from_rgba_unmultiplied(0x3B, 0x5B, 0xDB, 0x48),
+            selection: Color32::from_rgba_unmultiplied(0x32, 0x8B, 0xE6, 0x48),
             find_highlight: Color32::from_rgba_unmultiplied(0xFF, 0xE0, 0x3D, 0x90),
             page_shadow: Color32::from_rgba_unmultiplied(0, 0, 0, 0x22),
             handle: Color32::WHITE,
@@ -338,8 +338,8 @@ impl Tokens {
             hover: Color32::from_rgb(0x3D, 0x3D, 0x3D),
             pressed: Color32::from_rgb(0x4A, 0x4A, 0x4A),
             checked: Color32::from_rgb(0x2E, 0x3A, 0x66),
-            accent: Color32::from_rgb(0x7A, 0x93, 0xF0),
-            accent_text: Color32::from_rgb(0x9C, 0xB0, 0xF5),
+            accent: Color32::from_rgb(0x64, 0xA0, 0xF0),
+            accent_text: Color32::from_rgb(0x82, 0xB4, 0xFA),
             // Dark text on the light dark-theme accent: white on #7a93f0 is only 2.9:1 (#655).
             on_accent: Color32::from_rgb(0x11, 0x16, 0x2E),
             input: Color32::from_rgb(0x1E, 0x1E, 0x1E),
@@ -350,7 +350,7 @@ impl Tokens {
             ruler_margin: Color32::from_rgb(0x2E, 0x2E, 0x2E),
             ruler_tick: Color32::from_rgb(0xB4, 0xB4, 0xB4),
             status_bar: Color32::from_rgb(0x1F, 0x1F, 0x1F),
-            selection: Color32::from_rgba_unmultiplied(0x7A, 0x93, 0xF0, 0x55),
+            selection: Color32::from_rgba_unmultiplied(0x64, 0xA0, 0xF0, 0x55),
             find_highlight: Color32::from_rgba_unmultiplied(0xC8, 0xA8, 0x00, 0x70),
             page_shadow: Color32::from_rgba_unmultiplied(0, 0, 0, 0x60),
             handle: Color32::from_rgb(0xF2, 0xF2, 0xF2),
