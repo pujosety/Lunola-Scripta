@@ -17,7 +17,7 @@ use wordcraft_engine::cmd::mailings::{FilterOp, FilterRule, SortKey};
 
 use crate::WordApp;
 use crate::options::MeasureExt;
-use crate::theme::{Tokens, semibold};
+use crate::theme::{Tokens, medium, semibold};
 
 /// The Find and Replace dialog's search options beyond the first row (#543).
 #[derive(Clone, Debug, Default, Serialize)]
