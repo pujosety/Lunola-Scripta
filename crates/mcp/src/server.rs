@@ -135,7 +135,7 @@ impl Server {
                     "capabilities": {"tools": {}, "resources": {}},
                     "serverInfo": {"name": "lunola-scripta", "title": "Lunola Scripta", "version": env!("CARGO_PKG_VERSION"), "websiteUrl": "https://getlunola.com/apps/lunola-scripta"},
                     "instructions": format!(
-                        "{INSTRUCTIONS} Backend: {}. Community: https://discord.gg/lunola · https://getlunola.com/apps/lunola-scripta · https://github.com/pujosety/Lunola-Scripta",
+                        "{INSTRUCTIONS} Backend: {}. Website: https://getlunola.com/apps/lunola-scripta · https://github.com/pujosety/Lunola-Scripta",
                         self.backend.describe()
                     ),
                 }))

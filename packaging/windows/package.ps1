@@ -86,12 +86,14 @@ foreach ($check in @(@('wordcraft.exe', 2), @('wordcraft-cli.exe', 3))) {
   if ($h.Subsystem -ne $check[1]) { throw "$($check[0]) has PE subsystem $($h.Subsystem), expected $($check[1])" }
   Write-Output "ok $($check[0]): $Arch, PE subsystem $($h.Subsystem)"
 }
+$AppExe = "Lunola-Scripta-$Version-windows-$Arch.exe"
 $Stage = Join-Path $TargetDir "windows-package\$Arch"
 Remove-Item -Recurse -Force $Stage -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force -Path $Stage | Out-Null
-Copy-Item (Join-Path $Bin 'wordcraft.exe'), (Join-Path $Bin 'wordcraft-cli.exe') $Stage
+Copy-Item (Join-Path $Bin 'wordcraft.exe'), (Join-Path $Stage "Lunola-Scripta-$Version-windows-$Arch.exe")
+Copy-Item (Join-Path $Bin 'wordcraft-cli.exe'), (Join-Path $Stage 'wordcraft-cli.exe')
 
-& (Join-Path $PSScriptRoot 'sign.ps1') (Join-Path $Stage 'wordcraft.exe') (Join-Path $Stage 'wordcraft-cli.exe')
+& (Join-Path $PSScriptRoot 'sign.ps1') (Join-Path $Stage $AppExe) (Join-Path $Stage 'wordcraft-cli.exe')
 
 # ---- MSI ---------------------------------------------------------------------------------------
 # The installer's welcome page shows the license: build its RTF from LICENSE-MIT and LICENSE-APACHE
