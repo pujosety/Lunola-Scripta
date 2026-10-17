@@ -230,7 +230,7 @@ pub fn show(app: &mut WordApp, ui: &mut Ui) {
                     let share = tl!("Share");
                     let share_w = ui.ctx().fonts_mut(|f| f.layout_no_wrap(share.to_string(), medium(12.0), t.text).size().x);
                     let (r, resp) = ui.allocate_exact_size(vec2((share_w + 36.0).max(74.0), 24.0), Sense::click());
-                    ui.painter().rect_filled(r, 4.0, if resp.hovered() { t.accent_text } else { t.accent });
+                    ui.painter().rect_filled(r, 4.0, if resp.hovered() { t.accent_hover } else { t.accent });
                     icons::paint(
                         ui.painter(),
                         Rect::from_center_size(pos2(r.min.x + 14.0, r.center().y), vec2(14.0, 14.0)),
