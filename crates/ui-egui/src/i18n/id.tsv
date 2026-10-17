@@ -154,7 +154,6 @@
 	Any Letter	Huruf Apa Pun
 	Anyone can open this document. Encrypt it with a password to keep it private.	Siapa pun dapat membuka dokumen ini. Enkripsi dengan kata sandi untuk menjaganya tetap pribadi.
 	Anyone who opens the document will need this password.	Siapa pun yang membuka dokumen ini akan memerlukan kata sandi ini.
-	APA	APA
 	Apply	Terapkan
 	Apply as you type	Terapkan saat mengetik
 	Apply Asian line-breaking rules (kinsoku)	Terapkan aturan pemutusan baris Asia (kinsoku)
@@ -214,8 +213,6 @@
 	AutoSave saves every change to the file (needs a saved document)	Simpan Otomatis menyimpan setiap perubahan ke file (perlu dokumen yang telah disimpan)
 	AutoSave writes your changes to the file a moment after you stop typing.	SimpanOtomatis menulis perubahan ke berkas sesaat setelah Anda berhenti mengetik.
 	AutoText	TeksOtomatis
-	B4 (JIS)   10.12" × 14.33"	B4 (JIS)   10,12" × 14,33"
-	B5 (JIS)   7.17" × 10.12"	B5 (JIS)   7,17" × 10,12"
 	Backspace	Backspace
 	Balloons	Balon
 	Banded Columns	Kolom bergaris
@@ -390,7 +387,6 @@
 	Checked symbol	Simbol tercentang
 	Chevron Down	Chevron Bawah
 	Chevron Up	Chevron Atas
-	Chicago	Chicago
 	Chinese (Simplified)	Tionghoa (Sederhana)
 	Chinese (Traditional)	Tionghoa (Tradisional)
 	Choose a command	Pilih perintah
@@ -784,16 +780,13 @@
 	English (United States)	Inggris (Amerika Serikat)
 	Engrave	Ukir
 	Enlarge symbol	Perbesar simbol
-	Enter bookmark name:	Masukkan nama penanda:
 	Enter formatting for number:	Masukkan pemformatan untuk angka:
 	Enter in Equation	Masuk di Persamaan
 	Enter page number:	Masukkan nomor halaman:
 	Entry marked.	Entri ditandai.
 	Envelope #10	Amplop #10
-	Envelope #10   4.12" × 9.50"	Amplop #10   4,12" × 9,50"
 	Envelope Address	Alamat Amplop
 	Envelope DL	Amplop DL
-	Envelope DL   4.33" × 8.66"	Amplop DL   4,33" × 8,66"
 	Envelope Return	Alamat Pengirim
 	Envelope size:	Ukuran amplop:
 	Envelopes	Amplop
@@ -825,7 +818,6 @@
 	Example: {sample}	Contoh: {sample}
 	Exceptions (optional)	Pengecualian (opsional)
 	Exceptions…	Pengecualian…
-	Executive   7.25" × 10.50"	Executive   7,25" × 10,50"
 	Existing File or Web Page	File atau Halaman Web yang Ada
 	Expand	Perluas
 	Expand or Collapse Heading	Perluas atau Persempit Judul
@@ -871,7 +863,6 @@
 	Find What Expression	Cari Ekspresi Apa
 	Find What Text	Cari Teks Apa
 	Find what:	Cari apa:
-	Find “{text}” in the document	Cari “{text}” di dokumen
 	Find:	Cari:
 	Finding printers…	Mencari printer…
 	Finish	Selesai
@@ -938,7 +929,6 @@
 	Function	Fungsi
 	Functions	Fungsi
 	Gallery	Galeri
-	GB/T 7714	GB/T 7714
 	General	Umum
 	Geometry	Geometri
 	German (Germany)	Jerman (Jerman)
@@ -954,8 +944,6 @@
 	Good afternoon	Selamat siang
 	Good evening	Selamat malam
 	Good morning	Selamat pagi
-	GOST (name sort)	GOST (urut nama)
-	GOST (title sort)	GOST (urut judul)
 	Grab bag	Kantong
 	Graphic	Grafis
 	Grave	Aksen Berat
@@ -979,7 +967,6 @@
 	Grow Font 1 Point	Besarkan Font 1 Poin
 	H:	T:
 	Hanging Indent	Indentasi Gantung
-	Harvard (Anglia)	Harvard (Anglia)
 	Hat	Aksen Topi
 	Header	Kepala
 	Header & Footer	Kepala & Kaki
@@ -1045,7 +1032,6 @@
 	Icon Color	Warna Ikon
 	Icons	Ikon
 	Identity Matrices	Matriks Identitas
-	IEEE	IEEE
 	If…Then…Else	Jika…Maka…Lainnya
 	If…Then…Else…	Jika…Maka…Lainnya…
 	Ignore All	Abaikan Semua
@@ -1174,8 +1160,6 @@
 	Ionosphere	Ionosfer
 	Is blank	Kosong
 	Is not blank	Tidak kosong
-	ISO 690 (author-date)	ISO 690 (penulis-tanggal)
-	ISO 690 (numerical)	ISO 690 (numerik)
 	Issue	Terbitan
 	Italian	Italia
 	Italic	Miring
@@ -1204,7 +1188,6 @@
 	Landscape	Lanskap
 	Language	Bahasa
 	Language Preferences…	Preferensi Bahasa…
-	Large	Besar
 	Large\nOperator	Operator\nBesar
 	Largest Only	Hanya Terbesar
 	Lasso	Laso
@@ -1242,13 +1225,11 @@
 	Left:	Kiri:
 	Leftwards Arrow Above	Panah ke Kiri di Atas
 	Leftwards Harpoon Above	Harpoon ke Kiri di Atas
-	Legal   8.50" × 14.00"	Legal   8,50" × 14,00"
 	Legal style numbering	Penomoran gaya hukum
 	Legend	Legenda
 	Less than	Kurang dari
 	Less than or equal	Kurang dari atau sama dengan
 	Letter	Surat
-	Letter   8.50" × 11.00"	Letter   8,50" × 11,00"
 	Letter headings	Judul huruf
 	Letter-Like Symbols	Simbol Mirip Huruf
 	Letters	Huruf
@@ -1266,7 +1247,6 @@
 	Light	Terang
 	Light with Outline	Terang dengan Garis
 	Limit	Limit
-	Limit and	Limit dan
 	Limit and\nLog	Limit dan\nLog
 	Limit consecutive hyphens to:	Batasi tanda hubung berurutan hingga:
 	Limit Example	Contoh Limit
@@ -1320,7 +1300,6 @@
 	Location	Lokasi
 	Location: {path}	Lokasi: {path}
 	Lock Fields	Kunci Bidang
-	Log	Log
 	Logarithm	Logaritma
 	Logarithm with Base	Logaritma dengan Basis
 	Logical AND	AND Logika
@@ -1388,7 +1367,6 @@
 	Mirror margins	Cerminkan margin
 	Mirrored	Dicerminkan
 	MIT OR Apache-2.0. Copyright (c) 2026 Lunola Team and the Lunola Scripta contributors.	MIT OR Apache-2.0. Hak Cipta (c) 2026 Tim Lunola dan kontributor Lunola Scripta.
-	MLA	MLA
 	Model	Model
 	Models	Model
 	Moderate	Sedang
@@ -2121,7 +2099,6 @@ preview	Title	Judul
 	Single Right Bracket	Kurung Siku Kanan Tunggal
 	Single Right Parenthesis	Tanda Kurung Kanan Tunggal
 	Single Spacing	Spasi Tunggal
-	SIST02	SIST02
 	Site name	Nama situs
 	Size	Ukuran
 	Size (pt):	Ukuran (pt):
@@ -2203,7 +2180,6 @@ preview	Title	Judul
 	Start Mail\nMerge	Mulai Surat\nMassal
 	Start-up	Saat mulai
 	State	Provinsi
-	Statement   5.50" × 8.50"	Statement   5,50" × 8,50"
 	Statistics	Statistik
 	Status Bar	Bilah Status
 	Stop	Berhenti
@@ -2226,7 +2202,6 @@ preview	Title	Judul
 	Style name:	Nama gaya:
 	Style Set	Kumpulan Gaya
 	Style:	Gaya:
-	Style: APA	Gaya: APA
 	Style: {style}	Gaya: {style}
 	Styles	Gaya
 	Styles Pane	Panel Gaya
@@ -2293,7 +2268,6 @@ preview	Title	Judul
 	Table Style Options	Opsi Gaya Tabel
 	Table Styles	Gaya Tabel
 	Tables	Tabel
-	Tabloid   11.00" × 17.00"	Tabloid   11,00" × 17,00"
 	Tabs	Tab
 	Tabs…	Tab…
 	Tabular List	Daftar Tabular
@@ -2303,7 +2277,6 @@ preview	Title	Judul
 	Tangent Function	Fungsi Tangen
 	TC entry fields	Bidang entri TC
 	Technology	Teknologi
-template	Letter	Surat
 	Templates	Templat
 	Templates and Add-ins	Templat dan Add-in
 	Text	Teks
@@ -2361,7 +2334,6 @@ template	Letter	Surat
 	Thick	Tebal
 	Thickness	Ketebalan
 	This document	Dokumen ini
-	This document has no bookmarks.	Dokumen ini tidak memiliki penanda.
 	This field has no options.	Bidang ini tidak memiliki opsi.
 	This folder can't be read: {error}	Folder ini tidak dapat dibaca: {error}
 	This font has no characters to show.	Font ini tidak memiliki karakter untuk ditampilkan.
@@ -2424,7 +2396,6 @@ template	Letter	Surat
 	Triple Integral with Stacked Limits	Integral Tripel dengan Limit Bertumpuk
 	Trust Center	Pusat Kepercayaan
 	Tue	Sel
-	Turabian	Turabian
 	Turkish	Turki
 	Two	Dua
 	Two-sided printing	Pencetakan dua sisi
@@ -2434,7 +2405,6 @@ template	Letter	Surat
 	Type +2 or -1 to move from the page you are on.	Ketik +2 atau -1 untuk berpindah dari halaman Anda.
 	Type a command, e.g. "insert table"	Ketik perintah, mis. "sisipkan tabel"
 	Type a New List…	Ketik Daftar Baru…
-	Type a page number, or +2 / -1.	Ketik nomor halaman, atau +2 / -1.
 	Type at least one recipient.	Ketik minimal satu penerima.
 	Type Character Code	Ketik Kode Karakter
 	Type equations in LaTeX	Ketik persamaan dalam LaTeX
@@ -2522,7 +2492,6 @@ template	Letter	Surat
 	Volume Integral with Limits	Integral Volume dengan Limit
 	Volume Integral with Stacked Limits	Integral Volume dengan Limit Bertumpuk
 	W:	L:
-	Wait for the print job to finish submitting before closing.	Tunggu pekerjaan cetak selesai dikirim sebelum menutup.
 	Waiting for the save to finish…	Menunggu penyimpanan selesai…
 	Waiting for Zotero…	Menunggu Zotero…
 	Warm Gradient with Outline	Gradien Hangat dengan Garis
@@ -2630,3 +2599,4 @@ template	Letter	Surat
 	✓ None	✓ Tidak ada
 	➕ New comment	➕ Komentar baru
 	📂  Browse…	📂  Telusuri…
+	Write Your World.	Tulis Duniamu.
