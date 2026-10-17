@@ -17,7 +17,6 @@
 	0 or More Characters	0 Karakter atau Lebih
 	% of all commits	% dari semua commit
 	3-D	3-D
-	3-D Rotation	Rotasi 3-D
 	2. Editing restrictions	2. Pembatasan pengeditan
 	1. Formatting restrictions	1. Pembatasan pemformatan
 	3. Start enforcement	3. Mulai pemberlakuan
@@ -57,7 +56,6 @@
 	Add	Tambah
 	Add >>	Tambah >>
 	Add a comment	Tambahkan komentar
-	Add a table	Tambahkan tabel
 	Add a Table	Tambahkan Tabel
 	Add at least one field.	Tambahkan minimal satu bidang.
 	Add Chart Element	Tambah Elemen Bagan
@@ -216,7 +214,6 @@
 	AutoSave saves every change to the file (needs a saved document)	Simpan Otomatis menyimpan setiap perubahan ke file (perlu dokumen yang telah disimpan)
 	AutoSave writes your changes to the file a moment after you stop typing.	SimpanOtomatis menulis perubahan ke berkas sesaat setelah Anda berhenti mengetik.
 	AutoText	TeksOtomatis
-	Axis Titles	Judul Sumbu
 	B4 (JIS)   10.12" × 14.33"	B4 (JIS)   10,12" × 14,33"
 	B5 (JIS)   7.17" × 10.12"	B5 (JIS)   7,17" × 10,12"
 	Backspace	Backspace
@@ -242,7 +239,6 @@
 	Below text	Di Bawah teks
 	Below the item	Di bawah item
 	Between	Antara
-	Bevel	Bevel
 	Bibliography	Daftar Pustaka
 	Binary assets added	Aset biner ditambahkan
 	Binary assets removed	Aset biner dihapus
@@ -264,7 +260,6 @@
 	Book title	Judul buku
 	Bookmark	Penanda
 	Bookmark name:	Nama penanda:
-	Bookmarks	Penanda
 	Border lines	Garis batas
 	Border Painter	Pelukis Batas
 	Border\nPainter	Pelukis\nBatas
@@ -292,11 +287,8 @@
 	Breaks	Pemutus
 	Breve	Aksen Breve
 	Bring Forward	Bawa ke Depan
-	Bring to Front	Bawa ke Paling Depan
 	Browse in Lunola Scripta…	Jelajahi di Lunola Scripta…
 	Browse…	Jelajahi…
-	Bubble	Gelembung
-	Build	Susun
 	Building Block Gallery Content Control	Kontrol Konten Galeri Blok Bangunan
 	Built-In	Bawaan
 	Built-in style	Gaya bawaan
@@ -419,10 +411,8 @@
 	Clear All Formatting	Hapus Semua Pemformatan
 	Clear Character Formatting	Hapus Pemformatan Karakter
 	Clear Character Style	Hapus Gaya Karakter
-	Clear Formatting	Bersihkan Format
 	Clear Formatting Level	Hapus Tingkat Pemformatan
 	Clear Paragraph Formatting	Hapus Pemformatan Paragraf
-	Clear WordArt	Bersihkan WordArt
 	Click a border between two cells to merge them. Esc stops.	Klik batas antara dua sel untuk menggabungkan. Esc untuk berhenti.
 	Click an item to paste it.	Klik item untuk menempelkannya.
 	Click level to modify:	Klik tingkat untuk mengubah:
@@ -463,7 +453,6 @@
 	Columns:	Kolom:
 	Combine	Gabungkan
 	Combine Documents	Gabungkan Dokumen
-	Combo	Kombinasi
 	Combo Box Content Control	Kontrol Konten Kotak Kombinasi
 	Commands	Perintah
 	Commands:	Perintah:
@@ -505,8 +494,6 @@
 	Content Control Properties	Properti Kontrol Konten
 	Contents can't be edited	Konten tidak dapat diedit
 	Context	Konteks
-	Continue numbering	Lanjutkan penomoran
-	Continue without restoring	Lanjutkan tanpa memulihkan
 	Continuous	Berkelanjutan
 	Continuous numbering	Penomoran berkelanjutan
 	Contour Integral	Integral Kontur
@@ -545,7 +532,6 @@
 	Couldn't download {name}: {error}	Tidak dapat mengunduh {name}: {error}
 	Couldn't make Lunola Scripta the default: {error}	Tidak dapat menjadikan Lunola Scripta sebagai default: {error}
 	Couldn't open {path}: {error}	Tidak dapat membuka {path}: {error}
-	Couldn't save {name}, so it is still open and nothing was lost: {error}	Tidak dapat menyimpan {name}, sehingga masih terbuka dan tidak ada yang hilang: {error}
 	Count by:	Hitung berdasarkan:
 	Count words in text boxes and notes	Hitung kata dalam kotak teks dan catatan
 	Country	Negara
@@ -561,7 +547,6 @@
 	Create Source	Buat Sumber
 	Croatian	Kroasia
 	Crop	Potong
-	Crop on the page works on unturned pictures: set Rotation to 0° first, or use the crop boxes	Pangkas pada halaman bekerja pada gambar yang tidak diputar: atur Rotasi ke 0° terlebih dahulu, atau gunakan kotak pangkas
 	Cross-reference	Referensi Silang
 	Cross-reference:	Rujukan silang:
 	Cube Root	Akar Kubik
@@ -602,8 +587,6 @@
 	Dashed	Putus-putus
 	Data	Data
 	Data Labels	Label Data
-	Data Series	Seri Data
-	Data Table	Tabel Data
 	Date & Time	Tanggal & Waktu
 	Date and Time	Tanggal dan Waktu
 	Date format	Format tanggal
@@ -672,9 +655,6 @@
 	Direct formatting	Pemformatan langsung
 	Direction:	Arah:
 	Directory	Direktori
-	Discard	Buang
-	Discard the recovery copy of {name}?	Buang salinan pemulihan {name}?
-	Discard…	Buang…
 	Discord	Discord
 	Discord community	Komunitas Discord
 	Display	Tampilan
@@ -757,7 +737,6 @@
 	Drops all formatting and pastes plain text.	Menghapus semua format dan menempelkan teks biasa.
 	Dutch	Belanda
 	E-mail Messages	Pesan Surel
-	East	Timur
 	Edit Comment	Edit Komentar
 	Edit Data	Edit Data
 	Edit Document	Edit Dokumen
@@ -785,7 +764,6 @@
 	Ellipsis	Elipsis
 	Em Dash	Em Dash
 	Em Space	Spasi Em
-	Email	Surel
 	Emboss	Emboss
 	Emphasis	Penekanan
 	Empty Matrices	Matriks Kosong
@@ -831,7 +809,6 @@
 	Equation Options	Opsi Persamaan
 	Erase Ink	Hapus Tinta
 	Eraser	Penghapus
-	Error Bars	Batang Galat
 	Errors ({n})	Kesalahan ({n})
 	Estonian	Estonia
 	Euler's identity	Identitas Euler
@@ -846,7 +823,6 @@
 	Exactly	Persis
 	Exactly {n}	Persis {n}
 	Example: {sample}	Contoh: {sample}
-	Excel Spreadsheet	Lembar Kerja Excel
 	Exceptions (optional)	Pengecualian (opsional)
 	Exceptions…	Pengecualian…
 	Executive   7.25" × 10.50"	Executive   7,25" × 10,50"
@@ -887,7 +863,6 @@
 	Filter and Sort	Filter dan Urutkan
 	Filter Recipients	Saring Penerima
 	Find	Cari
-	Find "{text}" in the document	Cari "{text}" dalam dokumen
 	Find and Replace	Cari dan Ganti
 	Find Next	Cari Berikutnya
 	Find Next Editable Region	Cari Region yang Dapat Diedit Berikutnya
@@ -938,11 +913,9 @@
 	Footnotes to endnotes	Catatan kaki ke catatan akhir
 	For which item:	Untuk item mana:
 	Format	Format
-	Format Axis	Format Sumbu
 	Format Page Numbers	Format Nomor Halaman
 	Format Page Numbers…	Format Nomor Halaman…
 	Format Painter	Pencetak Format
-	Format Selection	Format Pilihan
 	Format:	Format:
 	Formatted	Diformat
 	Formatted Text	Teks Berformat
@@ -957,7 +930,6 @@
 	Fraction	Pecahan
 	Fractions (1/2) as fraction characters (½)	Pecahan (1/2) sebagai karakter pecahan (½)
 	French (France)	Prancis (Prancis)
-	Fri	Jum
 	From text:	Dari teks:
 	from Unicode (hex)	ari Unicode (heks)
 	Full page of the same label	Halaman penuh label yang sama
@@ -1106,7 +1078,6 @@
 	Index and Tables	Indeks dan Tabel
 	Index Heading	Judul Indeks
 	Index {n}	Indeks {n}
-	Infinity	Tak Hingga
 	Inflate	Kembung
 	Info	Info
 	Initials:	Inisial:
@@ -1209,7 +1180,6 @@
 	Italian	Italia
 	Italic	Miring
 	Japanese	Jepang
-	Join the ArtCraft community on Discord	Bergabung dengan komunitas Lunola di Discord
 	Join the Lunola community on Discord	Bergabunglah dengan komunitas Lunola di Discord
 	Join us on Discord: discord.gg/artcraft	Bergabunglah dengan kami di Discord: discord.gg/artcraft
 	Journal	Jurnal
@@ -1235,7 +1205,6 @@
 	Language	Bahasa
 	Language Preferences…	Preferensi Bahasa…
 	Large	Besar
-	Large Operators	Operator Besar
 	Large\nOperator	Operator\nBesar
 	Largest Only	Hanya Terbesar
 	Lasso	Laso
@@ -1348,7 +1317,6 @@
 	Loaded {count} system fonts.	Memuat {count} font sistem.
 	Local font access is not supported by your browser.	Akses font lokal tidak didukung peramban Anda.
 	Local font access was denied.	Akses font lokal ditolak.
-	Local recovery is unavailable or still loading.	Pemulihan lokal tidak tersedia atau sedang dimuat.
 	Location	Lokasi
 	Location: {path}	Lokasi: {path}
 	Lock Fields	Kunci Bidang
@@ -1419,13 +1387,11 @@
 	Mirror indents	Cerminkan indentasi
 	Mirror margins	Cerminkan margin
 	Mirrored	Dicerminkan
-	MIT OR Apache-2.0. Copyright (c) 2026 ArtCraft Team and the Lunola Scripta contributors.	MIT OR Apache-2.0. Hak Cipta (c) 2026 Lunola Team dan kontributor Lunola Scripta.
 	MIT OR Apache-2.0. Copyright (c) 2026 Lunola Team and the Lunola Scripta contributors.	MIT OR Apache-2.0. Hak Cipta (c) 2026 Tim Lunola dan kontributor Lunola Scripta.
 	MLA	MLA
 	Model	Model
 	Models	Model
 	Moderate	Sedang
-	Modern	Modern
 	Modify Style	Ubah Gaya
 	Modify Table Style	Ubah Gaya Tabel
 	Modify Table Style…	Ubah Gaya Tabel…
@@ -1519,7 +1485,6 @@
 	No Outline	Tanpa Garis
 	No Paragraph Space	Tanpa Spasi Paragraf
 	No printers found. Configure a system printer or export a PDF.	Printer tidak ditemukan. Konfigurasikan printer sistem atau ekspor PDF.
-	No recovery copies.	Tidak ada salinan pemulihan.
 	No Reflection	Tanpa Pantulan
 	No Shadow	Tanpa Bayangan
 	No Soft Edges	Tanpa Tepi Lembut
@@ -1561,7 +1526,6 @@
 	Not {name}	Bukan {name}
 	Nothing	Tidak ada
 	Nothing collected yet. Items you copy or cut appear here.	Belum ada yang dikumpulkan. Item yang Anda salin atau potong muncul di sini.
-	Nothing of this type in the document.	Tidak ada jenis ini dalam dokumen.
 	Now used by {command}	Sekarang digunakan oleh {command}
 	Nudge	Geser Sedikit
 	Num Occurrences	Jumlah Kemunculan
@@ -1635,7 +1599,6 @@
 	Organizer	Pengatur
 	Organizer…	Penyelenggara…
 	Orientation	Orientasi
-	Original	Asli
 	Original document	Dokumen asli
 	Other	Lainnya
 	Other Large Operators	Operator Besar Lainnya
@@ -1823,7 +1786,6 @@ preview	Title	Judul
 	Quick Parts	Bagian Cepat
 	Quick Tables	Tabel Cepat
 	Quote	Kutipan
-	Radar	Radar
 	Radical	Akar
 	Radical with Degree	Akar dengan Derajat
 	Radicals	Akar
@@ -1850,14 +1812,11 @@ preview	Title	Judul
 	Recipient List	Daftar Penerima
 	Recipient lists	Daftar penerima
 	Recipients: {count}	Penerima: {count}
-	Recolor	Warnai Ulang
 	Recolor a one-color picture, such as an icon	Warnai ulang gambar satu warna, seperti ikon
 	Recolor Selected Ink	Warnai Ulang Tinta Terpilih
 	Record Macro	Rekam Makro
 	Recover	Pulihkan
 	Recover Unsaved Documents	Pulihkan Dokumen yang Belum Disimpan
-	Recovery copy	Salinan pemulihan
-	Recovery is disabled while this document has a password.	Pemulihan dinonaktifkan selama dokumen ini memiliki kata sandi.
 	Rectangle	Persegi
 	Red:	Merah:
 	Redo	Ulangi
@@ -1928,7 +1887,6 @@ preview	Title	Judul
 	Reset Graphic	Atur Ulang Grafik
 	Reset Paragraph Formatting	Atur Ulang Format Paragraf
 	Reset Picture	Atur Ulang Gambar
-	Reset to Match Style	Atur Ulang agar Sesuai Gaya
 	Reset to Normal	Atur Ulang ke Normal
 	Reset\nGraphic	Atur Ulang\nGrafik
 	Reset…	Atur Ulang…
@@ -1939,8 +1897,6 @@ preview	Title	Judul
 	Restart Each Page	Mulai Ulang Tiap Halaman
 	Restart Each Section	Mulai Ulang Tiap Bagian
 	Restart list after:	Mulai ulang daftar setelah:
-	Restore	Pulihkan
-	Restore opens an unsaved copy. Your original file stays unchanged.	Pulihkan membuka salinan yang belum disimpan. File asli Anda tetap tidak berubah.
 	Restrict Editing	Batasi Pengeditan
 	Restrict\nEditing	Batasi\nPengeditan
 	Result	Hasil
@@ -1996,7 +1952,6 @@ preview	Title	Judul
 	Russian	Rusia
 	Résumé	Resume
 	SAMPLE	CONTOH
-	Sat	Sab
 	Sat:	Saturasi:
 	Save	Simpan
 	Save a copy in another format. Printing goes through a PDF you can print from any viewer.	Simpan salinan dalam format lain. Pencetakan melalui PDF yang dapat Anda cetak dari viewer mana pun.
@@ -2032,14 +1987,11 @@ preview	Title	Judul
 	Sections	Bagian
 	See	Lihat
 	Select	Pilih
-	select a picture first	pilih gambar terlebih dahulu
 	Select a picture, shape, chart or table to describe it.	Pilih gambar, bentuk, grafik, atau tabel untuk mendeskripsikannya.
-	Select a place in this document:	Pilih tempat dalam dokumen ini:
 	Select a printer	Pilih printer
 	Select All	Pilih Semua
 	Select Cell	Pilih Sel
 	Select Column	Pilih Kolom
-	Select Data	Pilih Data
 	Select Heading and Content	Pilih Judul dan Konten
 	Select Line	Pilih Baris
 	Select Objects	Pilih Objek
@@ -2064,14 +2016,12 @@ preview	Title	Judul
 	Selection Pane	Panel Pilihan
 	Send Backward	Kirim ke Belakang
 	Send the document straight to the system print dialog, or save a copy in another format below.	Kirim dokumen langsung ke dialog cetak sistem, atau simpan salinan dalam format lain di bawah.
-	Send to Back	Kirim ke Paling Belakang
 	Sentence	Kalimat
 	Sentence case.	Huruf besar di awal kalimat.
 	Separator:	Pemisah:
 	Sequence name:	Nama urutan:
 	Serbian (Cyrillic)	Serbia (Sirilik)
 	Serbian (Latin)	Serbia (Latin)
-	Series	Seri
 	Series name	Nama seri
 	Series {n}	Seri {n}
 	Set	Tetapkan
@@ -2089,7 +2039,6 @@ preview	Title	Judul
 	Shading	Bayangan Latar
 	Shadow	Bayangan
 	Shadow, glow and soft edges	Bayangan, cahaya, dan tepi lembut
-	Shape	Bentuk
 	Shape Effects	Efek Bentuk
 	Shape Fill	Isian Bentuk
 	Shape Format	Format Bentuk
@@ -2155,7 +2104,6 @@ preview	Title	Judul
 	Side\nto Side	Bersebelahan
 	Sides of a right triangle	Sisi segitiga siku-siku
 	Signature Line	Garis Tanda Tangan
-	Simple Markup	Markah Sederhana
 	Sine and cosine series of f(x)	Deret sinus dan kosinus f(x)
 	Sine Function	Fungsi Sinus
 	Sine theta	Sinus theta
@@ -2197,7 +2145,6 @@ preview	Title	Judul
 	Smooth scrolling and zooming, and menus and buttons that fade in. Off shows every change at once.	Gulir dan zoom halus, serta menu dan tombol yang memudar masuk. Nonaktif menampilkan setiap perubahan sekaligus.
 	Soft Edges	Tepi Lembut
 	Soft Glow	Cahaya Lembut
-	Solid	Padat
 	Solid Accent	Aksen Padat
 	Sort	Urutkan
 	Sort by	Urutkan menurut
@@ -2259,7 +2206,6 @@ preview	Title	Judul
 	Statement   5.50" × 8.50"	Statement   5,50" × 8,50"
 	Statistics	Statistik
 	Status Bar	Bilah Status
-	Stock	Saham
 	Stop	Berhenti
 	Stop Protection	Hentikan Perlindungan
 	Stop Reading	Hentikan Pembacaan
@@ -2308,17 +2254,14 @@ preview	Title	Judul
 	Summation with Subscript Limit	Penjumlahan dengan Limit Subskrip
 	Summation with Subscript-Superscript Limits	Penjumlahan dengan Limit Subskrip-Superskrip
 	Summations	Penjumlahan
-	Sun	Min
 	Superscript	Superskrip
 	Suppress line numbers	Sembunyikan nomor baris
-	Surface	Permukaan
 	Surface Integral	Integral Permukaan
 	Surface Integral with Limits	Integral Permukaan dengan Limit
 	Surface Integral with Stacked Limits	Integral Permukaan dengan Limit Bertumpuk
 	Swap footnotes and endnotes	Tukar catatan kaki dan catatan akhir
 	Swedish	Swedia
 	Switch Modes	Ganti Mode
-	Switch Row/Column	Tukar Baris/Kolom
 	Switch\nModes	Ganti\nMode
 	Symbol	Simbol
 	Symbols	Simbol
@@ -2417,7 +2360,6 @@ template	Letter	Surat
 	These settings will be used for new documents.	Pengaturan ini akan dipakai untuk dokumen baru.
 	Thick	Tebal
 	Thickness	Ketebalan
-	This cannot be undone. Your original file stays unchanged.	Ini tidak dapat dibatalkan. File asli Anda tetap tidak berubah.
 	This document	Dokumen ini
 	This document has no bookmarks.	Dokumen ini tidak memiliki penanda.
 	This field has no options.	Bidang ini tidak memiliki opsi.
@@ -2430,7 +2372,6 @@ template	Letter	Surat
 	This section	Bagian ini
 	Three	Tiga
 	Through	Menembus
-	Thu	Kam
 	Tight	Rapat
 	Tilde	Tilde
 	Tips ({n})	Saran ({n})
@@ -2454,7 +2395,6 @@ template	Letter	Surat
 	Top Left Cell	Sel Kiri Atas
 	Top Margin	Margin Atas
 	Top of Page	Atas Halaman
-	Top of the Document	Atas Dokumen
 	Top Right Cell	Sel Kanan Atas
 	Top:	Atas:
 	Total	Total
@@ -2473,7 +2413,6 @@ template	Letter	Surat
 	Translate	Terjemahkan
 	Transparency	Transparansi
 	Transport	Transportasi
-	Trendline	Garis Tren
 	Triangle	Segitiga
 	Triangle Down	Segitiga Bawah
 	Triangle Up	Segitiga Atas
@@ -2561,7 +2500,6 @@ template	Letter	Surat
 	User name:	Nama pengguna:
 	Username	Nama Pengguna
 	Value	Nilai
-	Vector	Vektor
 	Vector A	Vektor A
 	Vector AB	Vektor AB
 	Version	Versi
@@ -2634,7 +2572,6 @@ template	Letter	Surat
 	Wrap\nText	Bungkus\nTeks
 	Write & Insert Fields	Tulis & Sisipkan Bidang
 	Write a reply	Tulis balasan
-	Write Your World.	Tulis Dunia Anda.
 	x bar	x bar
 	Year	Tahun
 	Yes	Ya
@@ -2673,7 +2610,6 @@ template	Letter	Surat
 	{size} pt	{size} pt
 	{width} × {height} mm	{width} × {height} mm
 	{words} words	{words} kata
-	1×1 Empty Matrix	Matriks Kosong 1×1
 	2×1 Empty Matrix	Matriks Kosong 2×1
 	3×1 Empty Matrix	Matriks Kosong 3×1
 	2×2 Determinant	Determinan 2×2
