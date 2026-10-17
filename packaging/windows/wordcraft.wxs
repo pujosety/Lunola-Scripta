@@ -31,8 +31,8 @@
         DowngradeErrorMessage="A newer version of Lunola Scripta is already installed." />
     <MediaTemplate EmbedCab="yes" CompressionLevel="high" />
 
-    <Icon Id="Lunola ScriptaIcon.ico" SourceFile="$(var.IconPath)" />
-    <Property Id="ARPPRODUCTICON" Value="Lunola ScriptaIcon.ico" />
+    <Icon Id="LunolaScriptaIcon.ico" SourceFile="$(var.IconPath)" />
+    <Property Id="ARPPRODUCTICON" Value="LunolaScriptaIcon.ico" />
     <Property Id="ARPURLINFOABOUT" Value="https://getlunola.com/apps/lunola-scripta" />
     <Property Id="ARPURLUPDATEINFO" Value="https://getlunola.com/apps/lunola-scripta" />
     <Property Id="ARPHELPLINK" Value="https://discord.gg/lunola" />
@@ -45,12 +45,12 @@
     <WixVariable Id="WixUILicenseRtf" Value="$(var.LicenseRtf)" />
     <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="Launch Lunola Scripta" />
     <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1" />
-    <Property Id="WixShellExecTarget" Value="[#Lunola ScriptaExe]" />
-    <CustomAction Id="LaunchLunola Scripta" BinaryRef="Wix4UtilCA_$(sys.BUILDARCHSHORT)" DllEntry="WixShellExec"
+    <Property Id="WixShellExecTarget" Value="[#LunolaScriptaExe]" />
+    <CustomAction Id="LaunchLunolaScripta" BinaryRef="Wix4UtilCA_$(sys.BUILDARCHSHORT)" DllEntry="WixShellExec"
         Impersonate="yes" Return="ignore" />
     <UI>
       <ui:WixUI Id="WixUI_Minimal" />
-      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="LaunchLunola Scripta"
+      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="LaunchLunolaScripta"
           Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 AND NOT Installed" />
     </UI>
 
@@ -60,20 +60,20 @@
     <StandardDirectory Id="ProgramMenuFolder" />
 
     <Feature Id="Main" Title="Lunola Scripta" Level="1">
-      <ComponentGroupRef Id="Lunola ScriptaFiles" />
+      <ComponentGroupRef Id="LunolaScriptaFiles" />
     </Feature>
   </Package>
 
   <Fragment>
-    <ComponentGroup Id="Lunola ScriptaFiles" Directory="INSTALLFOLDER">
-      <Component Id="Lunola ScriptaApp" Guid="855DCEC6-9285-444F-9382-9654B83B34F6">
-        <File Id="Lunola ScriptaExe" Source="$(var.BinDir)\lunola-scripta.exe" KeyPath="yes">
+    <ComponentGroup Id="LunolaScriptaFiles" Directory="INSTALLFOLDER">
+      <Component Id="LunolaScriptaApp" Guid="855DCEC6-9285-444F-9382-9654B83B34F6">
+        <File Id="LunolaScriptaExe" Source="$(var.BinDir)\wordcraft.exe" KeyPath="yes">
           <Shortcut Id="StartMenuShortcut" Directory="ProgramMenuFolder" Name="Lunola Scripta"
               Description="Lunola Scripta word processor" WorkingDirectory="INSTALLFOLDER" Advertise="yes"
-              Icon="Lunola ScriptaIcon.ico" IconIndex="0" />
+              Icon="LunolaScriptaIcon.ico" IconIndex="0" />
         </File>
 
-        <RegistryValue Root="HKLM" Key="Software\Microsoft\Windows\CurrentVersion\App Paths\lunola-scripta.exe" Value="[#Lunola ScriptaExe]" Type="string" />
+        <RegistryValue Root="HKLM" Key="Software\Microsoft\Windows\CurrentVersion\App Paths\lunola-scripta.exe" Value="[#LunolaScriptaExe]" Type="string" />
       </Component>
 
       <!-- File associations (#295). Each document type gets a Lunola Scripta ProgId (name, icon, open
@@ -83,7 +83,7 @@
            makes it the default (File › Options › General opens that page). Nothing here sets an
            extension's default: the installer never takes over .docx from another app. Markdown and
            plain text are only "Open with" candidates. Removed again on uninstall. -->
-      <Component Id="Lunola ScriptaFileTypes" Guid="EFF89E6A-F9B8-49F9-B3AE-E243347484B4">
+      <Component Id="LunolaScriptaFileTypes" Guid="EFF89E6A-F9B8-49F9-B3AE-E243347484B4">
         <RegistryValue Root="HKLM" Key="Software\RegisteredApplications" Name="Lunola Scripta" Value="Software\Lunola Scripta\Capabilities" Type="string" KeyPath="yes" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities" Name="ApplicationName" Value="Lunola Scripta" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities" Name="ApplicationDescription" Value="Write and design documents; open and save Word files." Type="string" />
@@ -91,67 +91,67 @@
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe" Name="FriendlyAppName" Value="Lunola Scripta" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
 
-        <ProgId Id="Lunola Scripta.Document" Description="Word Document" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.Document" Description="Word Document" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.Document\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.docx\OpenWithProgids" Name="Lunola Scripta.Document" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".docx" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".docx" Value="Lunola Scripta.Document" Type="string" />
 
-        <ProgId Id="Lunola Scripta.DocumentMacroEnabled" Description="Word Macro-Enabled Document" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.DocumentMacroEnabled" Description="Word Macro-Enabled Document" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.DocumentMacroEnabled\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.docm\OpenWithProgids" Name="Lunola Scripta.DocumentMacroEnabled" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".docm" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".docm" Value="Lunola Scripta.DocumentMacroEnabled" Type="string" />
 
-        <ProgId Id="Lunola Scripta.Template" Description="Word Template" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.Template" Description="Word Template" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.Template\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.dotx\OpenWithProgids" Name="Lunola Scripta.Template" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".dotx" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".dotx" Value="Lunola Scripta.Template" Type="string" />
 
-        <ProgId Id="Lunola Scripta.TemplateMacroEnabled" Description="Word Macro-Enabled Template" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.TemplateMacroEnabled" Description="Word Macro-Enabled Template" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.TemplateMacroEnabled\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.dotm\OpenWithProgids" Name="Lunola Scripta.TemplateMacroEnabled" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".dotm" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".dotm" Value="Lunola Scripta.TemplateMacroEnabled" Type="string" />
 
-        <ProgId Id="Lunola Scripta.LegacyDocument" Description="Legacy Word Document" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.LegacyDocument" Description="Legacy Word Document" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.LegacyDocument\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.doc\OpenWithProgids" Name="Lunola Scripta.LegacyDocument" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".doc" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".doc" Value="Lunola Scripta.LegacyDocument" Type="string" />
 
-        <ProgId Id="Lunola Scripta.LegacyTemplate" Description="Legacy Word Template" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.LegacyTemplate" Description="Legacy Word Template" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.LegacyTemplate\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.dot\OpenWithProgids" Name="Lunola Scripta.LegacyTemplate" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".dot" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".dot" Value="Lunola Scripta.LegacyTemplate" Type="string" />
 
-        <ProgId Id="Lunola Scripta.RichText" Description="Rich Text Document" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.RichText" Description="Rich Text Document" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.RichText\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.rtf\OpenWithProgids" Name="Lunola Scripta.RichText" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".rtf" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".rtf" Value="Lunola Scripta.RichText" Type="string" />
 
-        <ProgId Id="Lunola Scripta.OpenDocumentText" Description="OpenDocument Text" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.OpenDocumentText" Description="OpenDocument Text" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.OpenDocumentText\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.odt\OpenWithProgids" Name="Lunola Scripta.OpenDocumentText" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".odt" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Lunola Scripta\Capabilities\FileAssociations" Name=".odt" Value="Lunola Scripta.OpenDocumentText" Type="string" />
 
-        <ProgId Id="Lunola Scripta.Markdown" Description="Markdown Document" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.Markdown" Description="Markdown Document" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.Markdown\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.md\OpenWithProgids" Name="Lunola Scripta.Markdown" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".md" Value="" Type="string" />
 
-        <ProgId Id="Lunola Scripta.PlainText" Description="Text Document" Icon="Lunola ScriptaExe" IconIndex="0" />
+        <ProgId Id="LunolaScripta.PlainText" Description="Text Document" Icon="LunolaScriptaExe" IconIndex="0" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Lunola Scripta.PlainText\shell\open\command" Value="&quot;[#Lunola ScriptaExe]&quot; &quot;%1&quot;" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\.txt\OpenWithProgids" Name="Lunola Scripta.PlainText" Value="" Type="string" />
         <RegistryValue Root="HKLM" Key="Software\Classes\Applications\lunola-scripta.exe\SupportedTypes" Name=".txt" Value="" Type="string" />
       </Component>
 
-      <Component Id="Lunola ScriptaCli">
-        <File Id="Lunola ScriptaCliExe" Source="$(var.BinDir)\lunola-scripta-cli.exe" KeyPath="yes" />
+      <Component Id="LunolaScriptaCli">
+        <File Id="LunolaScriptaCliExe" Source="$(var.BinDir)\wordcraft-cli.exe" KeyPath="yes" />
       </Component>
     </ComponentGroup>
   </Fragment>
