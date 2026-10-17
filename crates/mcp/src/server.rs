@@ -133,9 +133,9 @@ impl Server {
                 Ok(json!({
                     "protocolVersion": version,
                     "capabilities": {"tools": {}, "resources": {}},
-                    "serverInfo": {"name": "wordcraft", "title": "Lunola Scripta", "version": env!("CARGO_PKG_VERSION"), "websiteUrl": "https://getartcraft.com/apps/wordcraft"},
+                    "serverInfo": {"name": "lunola-scripta", "title": "Lunola Scripta", "version": env!("CARGO_PKG_VERSION"), "websiteUrl": "https://getlunola.com/apps/lunola-scripta"},
                     "instructions": format!(
-                        "{INSTRUCTIONS} Backend: {}. Community: https://discord.gg/artcraft · https://getartcraft.com/apps/wordcraft · https://github.com/storytold/wordcraft",
+                        "{INSTRUCTIONS} Backend: {}. Website: https://getlunola.com/apps/lunola-scripta · https://github.com/pujosety/Lunola-Scripta",
                         self.backend.describe()
                     ),
                 }))

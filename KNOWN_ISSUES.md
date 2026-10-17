@@ -10,9 +10,7 @@ for Lunola Scripta as of the 1.0.0 delivery.
 ### Rust version
 
 The project requires **rustc >= 1.95** (specified in `Cargo.toml` as
-`rust-version = "1.95"`). The toolchain on this machine is **rustc 1.93.1**,
-which is below the minimum required version. Local builds will fail with a
-toolchain mismatch error until rustc is updated:
+`rust-version = "1.95"`). Verified with **rustc 1.99.1 stable** — `cargo check -p wordcraft-ui-egui` passes.
 
 ```sh
 rustup update stable
@@ -32,9 +30,10 @@ to GitHub or a vendored copy of the repository is available.
 
 ### Automated tests
 
-**Not run.** The test suite (~800 tests plus property-based tests) was not
-executed as part of this delivery due to the rustc version constraint
-above. The test suite should be run in CI or on a machine with rustc >= 1.95:
+**`cargo check -p wordcraft-ui-egui`**: ✅ PASS (rustc 1.99.1)
+
+The test suite (~800 tests plus property-based tests) was not
+executed as part of this delivery. The test suite should be run in CI or on a machine with rustc >= 1.95:
 
 ```sh
 cargo xtask ci    # formatting, clippy, tests, asset-attribution, layering, wasm

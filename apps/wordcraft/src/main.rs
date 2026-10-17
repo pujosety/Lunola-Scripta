@@ -338,7 +338,7 @@ fn main() -> eframe::Result {
             }
             "--sample" => sample = true,
             "--version" => {
-                println!("wordcraft {} ({})", env!("CARGO_PKG_VERSION"), build_sha());
+                println!("Lunola Scripta {} ({})", env!("CARGO_PKG_VERSION"), build_sha());
                 return Ok(());
             }
             // Before the window opens (#968). Unlike `print!`, a closed stdout can't panic.

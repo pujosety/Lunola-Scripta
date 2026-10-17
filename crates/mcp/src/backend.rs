@@ -158,7 +158,7 @@ impl Remote {
     /// One request and its reply, with one retry on a new connection (the app may have
     /// restarted; a new connection also reads the key again).
     fn exchange(&mut self, id: u64, method: &str, params: &Value) -> Result<Value, String> {
-        let unreachable = |addr: &str, e: std::io::Error| format!("WordCraft app at {addr} is not reachable: {e}");
+        let unreachable = |addr: &str, e: std::io::Error| format!("Lunola Scripta app at {addr} is not reachable: {e}");
         let mut first = true;
         let reply = loop {
             let tried = if self.conn.is_some() { Ok(()) } else { self.reconnect() };

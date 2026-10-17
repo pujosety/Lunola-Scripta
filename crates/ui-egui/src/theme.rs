@@ -324,6 +324,10 @@ pub struct Tokens {
     pub pressed: Color32,
     pub checked: Color32,
     pub accent: Color32,
+    /// The accent's hover shade: the fill a filled accent control (Share, avatar, AutoSave,
+    /// keytips) takes while the pointer is over it, drawn with `on_accent` on top.
+    pub accent_hover: Color32,
+    /// Accent ink: text and links drawn on light surfaces (`accent` is too light for that).
     pub accent_text: Color32,
     /// Text/icon colour drawn on top of `accent` (e.g. keytip badge letters).
     pub on_accent: Color32,
@@ -373,8 +377,9 @@ impl Tokens {
             pressed: Color32::from_rgb(0xD6, 0xD6, 0xD6),
             checked: Color32::from_rgb(0xDD, 0xE3, 0xF8),
             accent: APP_COLOR,
+            accent_hover: Color32::from_rgb(0x4A, 0x9B, 0xF0),
             accent_text: APP_INK,
-            on_accent: Color32::WHITE,
+            on_accent: Color32::from_rgb(0x1A, 0x1A, 0x2E),
             input: Color32::WHITE,
             input_border: Color32::from_rgb(0x8A, 0x8A, 0x8A),
             group_label: Color32::from_rgb(0x70, 0x70, 0x70),
@@ -415,6 +420,7 @@ impl Tokens {
             pressed: Color32::from_rgb(0x4A, 0x4A, 0x4A),
             checked: Color32::from_rgb(0x2E, 0x3A, 0x66),
             accent: Color32::from_rgb(0x64, 0xA0, 0xF0),
+            accent_hover: Color32::from_rgb(0x82, 0xB4, 0xFA),
             accent_text: Color32::from_rgb(0x82, 0xB4, 0xFA),
             // Dark text on the light dark-theme accent: white on #7a93f0 is only 2.9:1 (#655).
             on_accent: Color32::from_rgb(0x11, 0x16, 0x2E),
@@ -813,7 +819,7 @@ mod tests {
     #[test]
     fn on_accent_reads_on_the_accent() {
         for t in [super::Tokens::light(), super::Tokens::dark()] {
-            for (name, bg) in [("accent", t.accent), ("hover", t.accent_text)] {
+            for (name, bg) in [("accent", t.accent), ("hover", t.accent_hover)] {
                 let r = contrast(t.on_accent, bg);
                 assert!(r >= 4.5, "dark={}: on_accent on {name} is {r:.2}:1", t.dark);
             }
@@ -886,7 +892,7 @@ mod tests {
         assert!(semi.iter().any(|n| n.starts_with("fallback ")), "the caption is painted with semibold");
     }
 
-    /// #656: dialog primary buttons, the Discord pill, the table eraser and the Navigation search
+    /// #656: dialog primary buttons, the community pill, the table eraser and the Navigation search
     /// highlight take their colours from the theme, not fixed light-theme values.
     #[test]
     fn interface_colours_come_from_the_theme() {
