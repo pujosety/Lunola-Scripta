@@ -374,7 +374,7 @@ impl Tokens {
             checked: Color32::from_rgb(0xDD, 0xE3, 0xF8),
             accent: APP_COLOR,
             accent_text: APP_INK,
-            on_accent: Color32::WHITE,
+            on_accent: Color32::from_rgb(0x1A, 0x1A, 0x2E),
             input: Color32::WHITE,
             input_border: Color32::from_rgb(0x8A, 0x8A, 0x8A),
             group_label: Color32::from_rgb(0x70, 0x70, 0x70),
