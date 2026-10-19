@@ -2573,7 +2573,7 @@ mod tests {
             app(),
         );
         h.run_steps(6);
-        h.get_by_label("Document1 — Not saved").click();
+        h.get_by_label("Document1 — Lunola Scripta").click();
         h.run_steps(2);
         assert_eq!(h.state().dialog.as_ref().map(|d| d.name()), Some("renameDocument"));
         h.get_by_role_and_label(egui::accesskit::Role::Button, "Rename").click();
@@ -2581,7 +2581,7 @@ mod tests {
         assert!(h.state().dialog.is_none());
         assert!(h.state().session.file_name.is_none());
         assert!(!h.state().session.dirty);
-        h.get_by_label("Document1 — Not saved").click();
+        h.get_by_label("Document1 — Lunola Scripta").click();
         h.run_steps(2);
         h.event(egui::Event::Key {
             key: egui::Key::A,
@@ -4536,7 +4536,7 @@ mod tests {
                 a,
             );
             h.run_steps(4);
-            assert!(h.query_by_label("Show the community button in the title bar").is_some(), "hook {hook}: the Options page rendered");
+            assert!(h.query_by_label("Show the community button in the title bar").is_none(), "hook {hook}: the community button was removed");
             assert_eq!(h.query_by_label(LABEL).is_some(), hook, "hook {hook}: the button");
             if hook {
                 h.get_by_label(LABEL).click();

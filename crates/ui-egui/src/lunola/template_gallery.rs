@@ -75,7 +75,7 @@ pub fn show_template_gallery(app: &mut WordApp, ui: &mut Ui) {
     });
 }
 
-fn template_card(app: &mut WordApp, ui: &mut Ui, template: &GalleryTemplate, t: &Tokens) {
+fn template_card(_app: &mut WordApp, ui: &mut Ui, template: &GalleryTemplate, t: &Tokens) {
     let (rect, resp) = ui.allocate_exact_size(egui::vec2(200.0, 180.0), Sense::click());
     resp.widget_info(|| egui::WidgetInfo::labeled(egui::WidgetType::Button, true, &template.name));
 

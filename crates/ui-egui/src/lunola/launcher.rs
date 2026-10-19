@@ -49,7 +49,7 @@ pub fn show_launcher(app: &mut WordApp, ui: &mut Ui) {
     });
 }
 
-fn app_tile(app: &mut WordApp, ui: &mut Ui, suite_app: SuiteApp, t: &crate::theme::Tokens) {
+fn app_tile(_app: &mut WordApp, ui: &mut Ui, suite_app: SuiteApp, t: &crate::theme::Tokens) {
     let (rect, resp) = ui.allocate_exact_size(egui::vec2(180.0, 160.0), Sense::click());
     resp.widget_info(|| egui::WidgetInfo::labeled(egui::WidgetType::Button, true, suite_app.display_name()));
 
