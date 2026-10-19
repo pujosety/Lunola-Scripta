@@ -38,13 +38,7 @@ impl Spacing {
     /// The spacing scale for a given interface-size zoom factor, so gaps scale with the
     /// interface size setting (like egui's own spacing).
     pub fn scaled(self, zoom: f32) -> Spacing {
-        Spacing {
-            xs: self.xs * zoom,
-            sm: self.sm * zoom,
-            md: self.md * zoom,
-            lg: self.lg * zoom,
-            xl: self.xl * zoom,
-        }
+        Spacing { xs: self.xs * zoom, sm: self.sm * zoom, md: self.md * zoom, lg: self.lg * zoom, xl: self.xl * zoom }
     }
 }
 

@@ -166,7 +166,14 @@ pub static LANGUAGES: [LangInfo; 24] = [
     // Croatian; `hr`, `hr-HR` and `hr_HR.UTF-8` resolve here.
     LangInfo { code: "hr", name: "Hrvatski", source: include_str!("hr.tsv"), prefer_hans: false, editing_lang: None, catalog: OnceLock::new() },
     // Indonesian; `id`, `id-ID` and `id_ID.UTF-8` resolve here.
-    LangInfo { code: "id", name: "Bahasa Indonesia", source: include_str!("id.tsv"), prefer_hans: false, editing_lang: None, catalog: OnceLock::new() },
+    LangInfo {
+        code: "id",
+        name: "Bahasa Indonesia",
+        source: include_str!("id.tsv"),
+        prefer_hans: false,
+        editing_lang: None,
+        catalog: OnceLock::new(),
+    },
 ];
 
 impl LangInfo {

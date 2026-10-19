@@ -2386,7 +2386,6 @@ pub(crate) fn works_without_document(id: &str) -> bool {
             | "ui.openFileDialog"
             | "ui.fileBrowser"
             | "ui.makeDefaultApp"
-
             | "ui.caretAnimation"
             | "ui.startScreen"
     ) || id.starts_with("help.")

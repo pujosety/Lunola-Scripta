@@ -334,11 +334,7 @@ pub fn title_bar(app: &mut WordApp, ui: &mut Ui) {
                 // No document open (#1129): the app's name alone.
                 crate::theme::LUNOLA_BRAND.to_string()
             } else {
-                format!(
-                    "{} — {}",
-                    app.title_stem(),
-                    crate::theme::LUNOLA_BRAND
-                )
+                format!("{} — {}", app.title_stem(), crate::theme::LUNOLA_BRAND)
             };
             let font = TypeRung::Chrome.semibold();
             let track = TypeRung::Chrome.tracking();
