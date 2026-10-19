@@ -2573,7 +2573,7 @@ mod tests {
             app(),
         );
         h.run_steps(6);
-        h.get_by_label("Document1 — Lunola Scripta").click();
+        h.get_by_label("Document1 - Lunola Scripta").click();
         h.run_steps(2);
         assert_eq!(h.state().dialog.as_ref().map(|d| d.name()), Some("renameDocument"));
         h.get_by_role_and_label(egui::accesskit::Role::Button, "Rename").click();
@@ -2581,7 +2581,7 @@ mod tests {
         assert!(h.state().dialog.is_none());
         assert!(h.state().session.file_name.is_none());
         assert!(!h.state().session.dirty);
-        h.get_by_label("Document1 — Lunola Scripta").click();
+        h.get_by_label("Document1 - Lunola Scripta").click();
         h.run_steps(2);
         h.event(egui::Event::Key {
             key: egui::Key::A,
@@ -2603,7 +2603,7 @@ mod tests {
         let long_name = "Notes ".repeat(25);
         h.state_mut().run("file.rename", json!({"name": long_name})).unwrap();
         h.run_steps(2);
-        h.get_by_label(&format!("{} — Not saved", long_name.trim())).click();
+        h.get_by_label(&format!("{} - Lunola Scripta", long_name.trim())).click();
         h.run_steps(2);
         assert!(h.state().dialog.is_some());
         h.event(egui::Event::Key { key: egui::Key::Escape, physical_key: None, pressed: true, repeat: false, modifiers: Default::default() });
