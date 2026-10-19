@@ -61,6 +61,7 @@ pub mod icons;
 pub mod ink;
 pub mod keys;
 pub mod keytips;
+pub mod lunola;
 pub mod mini_toolbar;
 pub mod objects;
 pub mod options;
@@ -256,7 +257,7 @@ pub struct UiState {
     #[serde(rename = "dark", skip_serializing)]
     pub(crate) legacy_dark: Option<bool>,
     pub nav_tab: String,
-    pub show_discord: bool,
+
     /// User name (File › Options) for comments and tracked changes; empty keeps the default.
     pub author: String,
     /// Desktop: the main window's size and position, restored at the next launch.
@@ -351,7 +352,7 @@ impl Default for UiState {
             animations: theme::Animations::default(),
             legacy_dark: None,
             nav_tab: "headings".into(),
-            show_discord: true,
+
             author: String::new(),
             window: None,
             language: i18n::AUTO.into(),
@@ -1492,10 +1493,6 @@ impl WordApp {
                         .into(),
                 ));
             }
-            "ui.discord" => {
-                self.canvas.open_url = Some("https://discord.gg/artcraft".into());
-                json!({})
-            }
             "ui.caretAnimation" => {
                 // File › Options › Advanced › Animation: `value` true or false turns the caret's
                 // glide and fading blink on or off; no value reads it.
@@ -2390,7 +2387,6 @@ pub(crate) fn works_without_document(id: &str) -> bool {
             | "ui.openFileDialog"
             | "ui.fileBrowser"
             | "ui.makeDefaultApp"
-            | "ui.discord"
             | "ui.caretAnimation"
             | "ui.startScreen"
     ) || id.starts_with("help.")
@@ -2577,7 +2573,7 @@ mod tests {
             app(),
         );
         h.run_steps(6);
-        h.get_by_label("Document1 — Not saved").click();
+        h.get_by_label("Document1 - Lunola Scripta").click();
         h.run_steps(2);
         assert_eq!(h.state().dialog.as_ref().map(|d| d.name()), Some("renameDocument"));
         h.get_by_role_and_label(egui::accesskit::Role::Button, "Rename").click();
@@ -2585,7 +2581,7 @@ mod tests {
         assert!(h.state().dialog.is_none());
         assert!(h.state().session.file_name.is_none());
         assert!(!h.state().session.dirty);
-        h.get_by_label("Document1 — Not saved").click();
+        h.get_by_label("Document1 - Lunola Scripta").click();
         h.run_steps(2);
         h.event(egui::Event::Key {
             key: egui::Key::A,
@@ -2607,7 +2603,7 @@ mod tests {
         let long_name = "Notes ".repeat(25);
         h.state_mut().run("file.rename", json!({"name": long_name})).unwrap();
         h.run_steps(2);
-        h.get_by_label(&format!("{} — Not saved", long_name.trim())).click();
+        h.get_by_label(&format!("{} - Lunola Scripta", long_name.trim())).click();
         h.run_steps(2);
         assert!(h.state().dialog.is_some());
         h.event(egui::Event::Key { key: egui::Key::Escape, physical_key: None, pressed: true, repeat: false, modifiers: Default::default() });
@@ -2703,7 +2699,7 @@ mod tests {
         for id in ["format.bold", "text.insert", "file.save", "file.saveAs", "file.print", "edit.paste", "insert.table", "ui.print"] {
             assert!(!widgets::enabled(a, id), "{id} is off with no document");
         }
-        for id in ["file.new", "file.open", "ui.backstage", "ui.tab", "ui.discord", "file.options", "ui.theme"] {
+        for id in ["file.new", "file.open", "ui.backstage", "ui.tab", "file.options", "ui.theme"] {
             assert!(widgets::enabled(a, id), "{id} works with no document");
         }
         assert!(!chrome::qat_enabled(a, "file.save"));
@@ -4540,7 +4536,7 @@ mod tests {
                 a,
             );
             h.run_steps(4);
-            assert!(h.query_by_label("Show the community button in the title bar").is_some(), "hook {hook}: the Options page rendered");
+            assert!(h.query_by_label("Show the community button in the title bar").is_none(), "hook {hook}: the community button was removed");
             assert_eq!(h.query_by_label(LABEL).is_some(), hook, "hook {hook}: the button");
             if hook {
                 h.get_by_label(LABEL).click();

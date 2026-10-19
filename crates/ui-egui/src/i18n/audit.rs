@@ -153,6 +153,10 @@ impl Exempt {
     fn allows(&self, app: &WordApp, text: &str) -> bool {
         let plain = pseudo::unmarked(text);
         let plain = plain.trim().trim_end_matches(" —").trim();
+        // The window title is "Document — Lunola Scripta" (and the About box's product line): the
+        // brand suffix is interface chrome, the part before it is the document's own name.
+        let brand_suffix = format!(" — {}", crate::theme::LUNOLA_BRAND);
+        let plain = plain.strip_suffix(&brand_suffix).map(str::trim_end).unwrap_or(plain);
         let is_shortcut =
             || plain.split('+').all(|k| matches!(k, "Ctrl" | "Shift" | "Alt" | "Cmd" | "Esc" | "Tab" | "Enter") || k.chars().count() <= 3);
         // A command's error message in the status bar: commands answer scripts and MCP too, so
@@ -172,7 +176,7 @@ impl Exempt {
             || plain.starts_with('@') // contributor handles
             || plain.starts_with("Style") || plain.starts_with("Table Style ") // a new style's default name
             || plain.contains('┬') || plain.contains('\u{2061}') // equation input (UnicodeMath), drawn as math
-            || matches!(plain, "Lunola Scripta" | "Lunola Scripta User" | "Discord" | "https://" | "auto" | "I. II. III." | "i. ii. iii.")
+            || matches!(plain, "Lunola Scripta" | "Lunola Scripta User" | "https://" | "auto" | "I. II. III." | "i. ii. iii.")
             || plain == "CONFIDENTIAL" // the watermark dialog's text: document content, kept as typed
             || plain == "Figure 1" // the caption dialog's sample: the label goes into the document as is
     }

@@ -39,7 +39,7 @@ file-format identifiers and downstream dependents.
 - README "Crafting Apps" section: Lunola Scripta presented alongside
   PhotoCraft, VectorCraft, FilmCraft, LightCraft, PdfCraft, EffectCraft,
   and DesignCraft
-- Links to getlunola.com and the Lunola Discord
+- Links to lunola.wasmer.app and the Lunola Discord
 - "Made by the Lunola team" attribution in the app and documentation
 
 ### Documentation
