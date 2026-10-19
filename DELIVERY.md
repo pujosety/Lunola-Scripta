@@ -48,7 +48,7 @@ Scripta rebranding and delivery project (2026-10-16).
 ## Phase 7 — Packaging and README
 
 - Rewrote README.md with complete Lunola Scripta branding
-- Added ecosystem links (Crafting Apps, getlunola.com, Discord)
+- Added ecosystem links (Crafting Apps, lunola.wasmer.app, Discord)
 - Updated all download, build, and CLI instructions
 - Updated packaging metadata
 - Committed as `7290ac0 Rebrand: complete Lunola Scripta packaging and README`
